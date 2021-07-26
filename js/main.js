@@ -31,3 +31,21 @@ if (elHeaderMainForm) {
     }
   });
 }
+
+var elHeaderMenuLink = document.querySelector(".header-menu__link");
+var elHeaderMenuBox = document.querySelector(".header-menu__box");
+
+if (elHeaderMenuLink) {
+  elHeaderMenuLink.addEventListener('click', function (evt) {
+    evt.preventDefault();
+    elHeaderMenuBox.classList.add('header-menu__box--open');
+  });
+}
+
+if (elHeaderMenuBox) {
+  elHeaderMenuBox.addEventListener('click', function (evt) {
+    if (evt.target.matches('.header-menu__box')) {
+      elHeaderMenuBox.classList.remove('header-menu__box--open');
+    }
+  });
+}

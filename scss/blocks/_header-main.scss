@@ -7,7 +7,6 @@
 .header-main__logo-link {
   width: 177px;
   display: inline-block;
-  // margin-right: 158px;
 }
 
 .header-main__logo-img {
@@ -144,8 +143,8 @@
   }
 
   .header-main__logo-link {
-    width: 177px;
-    margin-right: auto;
+    display: flex;
+    width: 100%;
   }
 
   .header-main__mobile-search{
@@ -164,6 +163,7 @@
 
   .header-main__modal{
     position: fixed;
+    left: 45px;
     z-index: 99;
     display: none;
     width: 88%;
@@ -239,7 +239,6 @@
     }
   }
 
-
   .header-main__cart {
     position: relative;
     z-index: 1;
@@ -277,4 +276,30 @@
 }
 
 
+@include breakpoint-down (850px){
+  .header-main__modal{
+    position: fixed;
+    left: 24px;
+    z-index: 99;
+    display: none;
+    width: 88%;
+    margin-left: 0;
+    margin-right: 0;
+  }
 
+  .header-main__modal--open{
+    display: block;
+  }
+}
+
+
+@include breakpoint-down (800px){
+  .header-main{
+    width: 100%;
+    min-width: 293px;
+  }
+
+  .header-main__logo-link {
+    display: flex;
+  }
+}

@@ -1,0 +1,104 @@
+.menu-dropdown__active {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  white-space: nowrap;
+  text-decoration: none;
+  margin: 0;
+  font-family: $poppins;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 22px;
+  color: $color-black;
+
+  &::after{
+    content: "";
+    display: block;
+    width: 8px;
+    height: 6px;
+    background-image: url(../../img/bottom.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    margin-left: 6px;
+  }
+}
+
+.menu-dropdown:hover .menu-dropdown__list {
+  opacity: 1;
+}
+
+.menu-dropdown__list {
+  position: absolute;
+  z-index: 1;
+  width: auto;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  opacity: 0;
+  background-color: $color-gray;
+  margin-top: 10px;
+  padding: 10px;
+  transition: opacity 0.4s ease;
+}
+
+.menu-dropdown__item:not(:last-child) {
+  margin-bottom: 7px;
+}
+
+.menu-dropdown__link {
+  text-decoration: none;
+  margin: 0;
+  font-family: $poppins;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 22px;
+  color: $color-bg-dark-gray;
+  text-transform: capitalize;
+}
+
+@include breakpoint-down (800px){
+  .menu-dropdown__active {
+    position: relative;
+  }
+  
+  .menu-dropdown:hover .menu-dropdown__list {
+    opacity: 1;
+  }
+  
+  .menu-dropdown__list {
+    position: absolute;
+    z-index: 1;
+    left: -50px;
+    width: auto;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    opacity: 0;
+    background-color: $color-gray;
+    margin-top: 10px;
+    padding: 10px;
+    transition: opacity 0.4s ease;
+  }
+  
+  .menu-dropdown__item:not(:last-child) {
+    margin-bottom: 7px;
+  }
+  
+  .menu-dropdown__link {
+    text-decoration: none;
+    margin: 0;
+    font-family: $poppins;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 22px;
+    color: $color-bg-dark-gray;
+    text-transform: capitalize;
+  }
+}
