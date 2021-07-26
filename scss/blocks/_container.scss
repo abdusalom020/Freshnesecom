@@ -1,0 +1,19 @@
+/* CONTAINER */
+.container {
+  width: 100%;
+  max-width: 1260px;
+  padding-left: 45px;
+  padding-right: 45px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #fff;
+}
+
+@include breakpoint-down (850px){
+  .container{
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+}
+
+

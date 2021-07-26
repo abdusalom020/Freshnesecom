@@ -1,16 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>project</title>
-  <link rel="stylesheet" href="css/normalize-mini.css">
-  <link rel="stylesheet" href="css/style.css">
+  <title>Freshnesecom</title>
+  <link rel="stylesheet" href="css/main.min.css">
 </head>
-<body>
-  
 
+<body>
+  <div class="container">
+    <header class="site-header">
+    
+      <section class="site-header__nav header-nav">
+
+      </section>
+
+      <section class="site-header__main header-main">
+        <a class="header-main__logo-link" href="#"><img class="header-main__logo-img" src="img/logo.svg" alt="logo" width="177" height="18"></a>
+        
+        <a class="header-main__mobile-search" href="#"></a>
+        
+        <div class="header-main__modal">
+          <form class="header-main__form" action="https://echo.htmlacademy.ru" method="GET">
+            <select class="header-main__select" name="select"  style="-webkit-appearance: none;">
+              <option value="select">All categories</option>
+              <option value="select">Bakery</option>
+              <option value="select">Fruit and vegetables</option>
+              <option value="select">Meat and fish</option>
+              <option value="select">Drinks</option>
+              <option value="select">Kitchen</option>
+              <option value="select">Special nutrition</option>
+              <option value="select">Baby</option>
+              <option value="select">Pharmacy</option>
+            </select>
+          
+            <input class="header-main__field" type="search" name="search" placeholder="Search Products, categories ..." required>
+            <button class="header-main__search" type="submit"></button>
+          </form>
+        </div>
+        
+
+        <a class="header-main__account" href="#">
+          <svg class="haeder-main__account-svg" width="22" height="24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M2 22l.79-2.88c2.61-9.5 13.81-9.5 16.42 0L20 22" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M11 11.98a5 5 0 100-10 5 5 0 000 10z"  stroke-width="2.5" stroke-linecap="round" stroke-linejoin="bevel"/></svg>
+        </a>
+
+        <a class="header-main__cart" href="#">
+          <svg class="haeder-main__cart-svg" width="24" height="22" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M17.89 19.85H6.11a1.42 1.42 0 01-1.38-1.08L2.08 8.16a.7.7 0 01.68-.87h18.48a.7.7 0 01.68.87l-2.65 10.61a1.42 1.42 0 01-1.38 1.08v0zM9.8 2.15L6.9 7.29M13.88 2.15l2.91 5.14"  stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          <span class="header-main__cart-number">4</span>
+        </a>
+
+      </section>
+
+      <section class="site-header__menu header-menu">
+
+      </section>
+    
+    </header>
+  </div>
 
   <script src="js/main.js"></script>
 </body>
