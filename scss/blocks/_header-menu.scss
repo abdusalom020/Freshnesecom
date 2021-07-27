@@ -39,7 +39,7 @@
 @include breakpoint-down (800px){
   .header-menu {
     position: relative;
-    z-index: 1;
+    z-index: 90;
     background-color: transparent;
     padding: 0;
     margin: 0;
@@ -48,6 +48,8 @@
 
   .header-menu__link {
     display: block;
+    border: none;
+    background-color: transparent;
   }
 
   .header-menu__svg {
@@ -55,13 +57,17 @@
   }
 
   .header-menu__box{
-    position: absolute;
+    position: fixed;
     z-index: 1;
-    top: 0;
+    bottom: 20px;
     right: 0;
     display: none;
     background-color: #999;
     padding: 15px;
+    background-image: url(../../img/close.svg);
+    background-repeat: no-repeat;
+    background-position: right 5px top 5px;
+    margin-right: 24px;
   }
 
   .header-menu__box--open {
