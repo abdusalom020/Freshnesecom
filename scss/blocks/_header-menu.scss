@@ -18,6 +18,10 @@
   align-items: center;
 }
 
+.header-menu__item{
+  position: relative;
+}
+
 .header-menu__item:not(:last-child) {
   margin-right: 40px;
 }
