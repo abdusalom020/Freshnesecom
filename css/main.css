@@ -1104,4 +1104,102 @@ img {
     margin-top: 16px;
   }
 }
+
+.footer-top {
+  margin-top: 64px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 48px;
+}
+
+.footer-top__list-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.footer-top__title {
+  margin: 0;
+  font-family: "Poppins", "Arial", sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 27px;
+  color: #151515;
+  text-align: left;
+}
+
+.footer-top__list {
+  padding: 0;
+  list-style: none;
+  margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: left;
+}
+
+.footer-top__item {
+  margin-top: 16px;
+}
+
+.footer-top__link {
+  text-decoration: none;
+  color: #6a983c;
+  font-family: "Open Sans", "Arial", serif;
+  font-size: 14px;
+  line-height: 19px;
+}
+
+.footer-top__link:hover {
+  color: #46760a;
+}
+
+@media only screen and (max-width: 800px) {
+  .footer-top {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: stretch;
+        -ms-flex-align: stretch;
+            align-items: stretch;
+  }
+  .footer-top__list-box {
+    margin-top: 20px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    -webkit-box-align: stretch;
+        -ms-flex-align: stretch;
+            align-items: stretch;
+  }
+  .footer-top__title {
+    text-align: center;
+    font-size: 30px;
+    line-height: 35px;
+    font-weight: bold;
+  }
+  .footer-top__item {
+    text-align: center;
+  }
+  .footer-top__link {
+    font-size: 20px;
+    line-height: 26px;
+  }
+}
 /*# sourceMappingURL=main.css.map */
