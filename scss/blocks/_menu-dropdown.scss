@@ -1,5 +1,4 @@
 .menu-dropdown__active {
-  position: relative;
   display: inline-flex;
   align-items: center;
   white-space: nowrap;
@@ -25,24 +24,30 @@
 }
 
 .menu-dropdown:hover .menu-dropdown__list {
-  opacity: 1;
+  display: flex;
 }
 
 .menu-dropdown__list {
   position: absolute;
   z-index: 1;
-  width: auto;
+  width: 100%;
   padding: 0;
   margin: 0;
   list-style: none;
-  display: flex;
+  display: none;
   flex-direction: column;
-  align-items: center;
-  opacity: 0;
+  align-items: flex-start;
   background-color: $color-gray;
-  margin-top: 10px;
+  margin-top: 0;
   padding: 10px;
-  transition: opacity 0.4s ease;
+}
+
+.menu-dropdown__item{
+  max-width: 100%;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  color: #fff;
 }
 
 .menu-dropdown__item:not(:last-child) {
@@ -52,6 +57,7 @@
 .menu-dropdown__link {
   text-decoration: none;
   margin: 0;
+  
   font-family: $poppins;
   font-weight: 500;
   font-size: 14px;

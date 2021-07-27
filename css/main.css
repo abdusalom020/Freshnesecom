@@ -716,7 +716,8 @@ img {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    width: 100%;
+    width: 177px;
+    margin-right: auto;
   }
   .header-main__mobile-search {
     display: block;
@@ -743,6 +744,8 @@ img {
     height: 100%;
     margin-left: 0;
     margin-right: 0;
+    padding-left: 45px;
+    padding-right: 45px;
   }
   .header-main__modal--open {
     display: block;
@@ -846,7 +849,7 @@ img {
   .header-main__cart-number {
     position: absolute;
     z-index: 1;
-    bottom: -8px;
+    bottom: -4px;
     left: -4px;
     display: block;
     width: 16px;
@@ -859,6 +862,7 @@ img {
     font-family: "Poppins", "Arial", sans-serif;
     font-weight: bold;
     font-size: 13px;
+    line-height: 16px;
     text-align: center;
   }
 }
@@ -866,12 +870,8 @@ img {
 @media only screen and (max-width: 850px) {
   .header-main__modal {
     position: fixed;
-    left: 24px;
-    z-index: 99;
-    display: none;
-    width: 88%;
-    margin-left: 0;
-    margin-right: 0;
+    padding-left: 24px;
+    padding-right: 24px;
   }
   .header-main__modal--open {
     display: block;
@@ -891,7 +891,6 @@ img {
 }
 
 .menu-dropdown__active {
-  position: relative;
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
@@ -921,32 +920,37 @@ img {
 }
 
 .menu-dropdown:hover .menu-dropdown__list {
-  opacity: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .menu-dropdown__list {
   position: absolute;
   z-index: 1;
-  width: auto;
+  width: 100%;
   padding: 0;
   margin: 0;
   list-style: none;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: none;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  opacity: 0;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
   background-color: #a9a9a9;
-  margin-top: 10px;
+  margin-top: 0;
   padding: 10px;
-  -webkit-transition: opacity 0.4s ease;
-  transition: opacity 0.4s ease;
+}
+
+.menu-dropdown__item {
+  max-width: 100%;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  color: #fff;
 }
 
 .menu-dropdown__item:not(:last-child) {
@@ -1033,6 +1037,10 @@ img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.header-menu__item {
+  position: relative;
 }
 
 .header-menu__item:not(:last-child) {
