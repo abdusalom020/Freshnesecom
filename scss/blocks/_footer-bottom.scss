@@ -41,3 +41,10 @@
         color: $color-green;
     }
 }
+
+
+@include breakpoint-dow(600px){
+    .footer-bottom{
+        display: none;
+    }
+}
