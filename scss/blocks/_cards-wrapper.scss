@@ -1,0 +1,23 @@
+.cards-wrapper{
+    margin-left: 122px;
+}
+
+.cards-wrapper__list{
+    display: flex;
+    @include list-unstyled;
+}
+
+.cards-wrapper__item{
+    background-image: url(/img/card.png);
+    background-color: #F4F8EC;
+    padding: 48px 40px 31px 31px;
+    width: 420px;
+    height: 280px;
+    border-radius: 12px;
+}
+
+.cards-wrapper__item~.cards-wrapper__item{
+    margin-left: 31px;
+}
+
+
