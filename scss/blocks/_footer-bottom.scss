@@ -1,5 +1,6 @@
 .footer-bottom {
     margin-top: 48px;
+    margin-bottom: 48px;
 }
 .footer-bottom__title {
     margin: 0;
@@ -42,9 +43,21 @@
     }
 }
 
+.site-footer__copyright{
+    font-family: $open-sans;
+    font-size: 14px;
+    line-height: 19px;
+    color: $color-black;
+}
 
-@include breakpoint-dow(600px){
+
+@include breakpoint-down(600px){
     .footer-bottom{
         display: none;
+    }
+
+    .site-footer__copyright{
+    display: flex;
+    justify-content: center;
     }
 }
