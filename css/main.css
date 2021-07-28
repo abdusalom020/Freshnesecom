@@ -1174,6 +1174,193 @@ img {
   margin-left: 12px;
 }
 
+.headline {
+  padding-top: 70px;
+  padding-bottom: 73px;
+}
+
+.headline__header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 37px;
+}
+
+.headline__heading {
+  margin: 0;
+  font-family: "Poppins", "Arial", sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 27px;
+}
+
+.headline__button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0;
+  font-family: "Poppins", "Arial", sans-serif;
+  font-weight: bold;
+  font-size: 15px;
+  line-height: 22px;
+  background-color: transparent;
+  border: none;
+}
+
+.headline__button::after {
+  content: "";
+  display: block;
+  width: 6px;
+  height: 9px;
+  background-image: url(../../img/right-scroll.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  margin-left: 13px;
+}
+
+.products-card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-top: -37px;
+  margin-left: -32px;
+}
+
+.products-card__box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 268px;
+  background-color: #fff;
+  border: 1px solid #d1d1d1;
+  border-radius: 12px;
+  padding: 16px;
+  margin-top: 37px;
+  margin-left: 32px;
+}
+
+.products-card__top {
+  position: relative;
+  z-index: 1;
+}
+
+.products-card__top-img {
+  border-radius: 12px;
+}
+
+.products-card__top-sale {
+  position: absolute;
+  z-index: 1;
+  top: 12px;
+  left: 20px;
+  font-family: "Poppins", "Arial", sans-serif;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 18px;
+  color: #6a983c;
+}
+
+.products-card__heading {
+  margin: 0;
+  font-family: "Poppins", "Arial", sans-serif;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 22px;
+  margin-top: 16px;
+  margin-bottom: 4px;
+}
+
+.products-card__text {
+  margin: 0;
+  font-family: "Open Sans", "Arial", serif;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 16px;
+  color: #575757;
+  margin-bottom: 16px;
+}
+
+.products-card__price {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+}
+
+.products-card__money {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 0;
+  font-family: "Poppins", "Arial", sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 27px;
+}
+
+.products-card__link {
+  display: inline-block;
+  text-decoration: none;
+  font-family: "Poppins", "Arial", sans-serif;
+  font-weight: bold;
+  font-size: 15px;
+  line-height: 22px;
+  color: #fff;
+  background-color: #6a983c;
+  border: 2px solid #46760a;
+  border-radius: 12px;
+  padding: 6px 12px;
+}
+
+.products-card__sale-money {
+  font-family: "Poppins", "Arial", sans-serif;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 18px;
+  -webkit-text-decoration-line: line-through;
+          text-decoration-line: line-through;
+  color: #a9a9a9;
+}
+
 .site-footer {
   padding-bottom: 64px;
 }
