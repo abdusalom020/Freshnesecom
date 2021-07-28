@@ -1,23 +1,124 @@
 .cards-wrapper{
-    margin-left: 122px;
-}
-
-.cards-wrapper__list{
     display: flex;
+    align-items: flex-start;
+    justify-content: space-between ;
+    padding-top: 64px;
+    padding-bottom: 64px;
+}
+
+.cards-wrapper__list {
+    display: flex;
+    align-items: center;
     @include list-unstyled;
+    margin-left: -32px;
 }
 
-.cards-wrapper__item{
+.cards-wrapper__item {
+    display: block;
     background-image: url(/img/card.png);
-    background-color: #F4F8EC;
-    padding: 48px 40px 31px 31px;
+    background-color: #f4f8ec;
+    padding: 48px 32px 32px;
     width: 420px;
-    height: 280px;
     border-radius: 12px;
+    margin-left: 32px;
 }
 
-.cards-wrapper__item~.cards-wrapper__item{
-    margin-left: 31px;
+.cards-wrapper__banner {
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 18px;
+    color: $color-green;
+    margin-bottom: 8px;
 }
 
+.cards-wrapper__title {
+    margin: 0;
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 33px;
+    color: $color-black;
+    margin-bottom: 94px;
+}
+
+.cards-wrapper__link{
+    display: inline-flex;
+    align-items: center;
+    padding: 12px 16px; 
+    border: 2px solid $color-green;
+    border-radius: 12px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 22px;
+    color: $color-black;
+    background-color: transparent;
+    white-space: nowrap;
+
+    &::after{
+        content: "";
+        display: block;
+        background-image: url(../../img/right-scroll.svg);
+        background-repeat: no-repeat;
+        background-position: center;
+        width: 6px;
+        height: 9px;
+        margin-left: 13px;
+        
+    }
+}
+
+
+@include breakpoint-down (1230px) {
+    .cards-wrapper{
+        justify-content: flex-start ;
+    }
+    
+    .cards-wrapper__item {
+        width: 350px;
+    }
+}
+
+
+@include breakpoint-down (1100px) {
+    .cards-wrapper{
+        justify-content: center ;
+    }
+    
+    .cards-wrapper__list {
+        flex-direction: column;
+        margin-left: 0;
+        margin-top: -30px;
+    }
+    
+    .cards-wrapper__item {
+        margin-left: 0;
+        margin-top: 30px;
+    }
+
+    .cards-wrapper__title {
+        margin-bottom: 54px;
+    }
+}
+
+
+@include breakpoint-down (700px) {
+    .cards-wrapper{
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+    
+    .cards-wrapper__list {
+        flex-direction: column;
+        margin-top: -30px;
+    }
+    
+    .cards-wrapper__item {
+        margin-left: 0;
+        margin-top: 30px;
+        width: 327px;
+    }
+}
 

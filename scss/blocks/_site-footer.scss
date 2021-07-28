@@ -10,7 +10,7 @@
 }
 
 
-@include breakpoint-down(600px){
+@include breakpoint-down(700px){
     .site-footer__copyright{
       display: flex;
       justify-content: center;

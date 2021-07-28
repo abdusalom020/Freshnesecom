@@ -26,7 +26,6 @@
 .products-card__top {
   position: relative;
   z-index: 1;
-
 }
 
 .products-card__top-img {
@@ -103,4 +102,31 @@
   line-height: 18px;
   text-decoration-line: line-through;
   color: $color-gray;
+}
+
+
+@include breakpoint-down (700px) {
+  .products-card {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin-top: -37px;
+    margin-left: -32px;
+  }
+  
+  
+  .products-card__box {
+    width: 327px;
+  }
+  
+  .products-card__top {
+    position: relative;
+    z-index: 1;
+  }
+
+  .products-card__top-img {
+    border-radius: 12px;
+    width: 295px;
+  }
 }
