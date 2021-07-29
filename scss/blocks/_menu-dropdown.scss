@@ -37,7 +37,7 @@
   display: none;
   flex-direction: column;
   align-items: flex-start;
-  background-color: $color-gray;
+  background-color: $color-green;
   margin-top: 0;
   padding: 10px;
 }
@@ -57,18 +57,18 @@
 .menu-dropdown__link {
   text-decoration: none;
   margin: 0;
-  
   font-family: $poppins;
   font-weight: 500;
   font-size: 14px;
   line-height: 22px;
-  color: $color-bg-dark-gray;
+  color: #fff;
   text-transform: capitalize;
 }
 
 @include breakpoint-down (800px){
   .menu-dropdown__active {
     position: relative;
+    color: $color-gray;
   }
   
   .menu-dropdown:hover .menu-dropdown__list {
@@ -78,7 +78,8 @@
   .menu-dropdown__list {
     position: absolute;
     z-index: 1;
-    left: -50px;
+    top: 10px;
+    left: 50px;
     width: auto;
     padding: 0;
     margin: 0;
@@ -87,7 +88,7 @@
     flex-direction: column;
     align-items: center;
     opacity: 0;
-    background-color: $color-gray;
+    background-color: $color-green;
     margin-top: 10px;
     padding: 10px;
     transition: opacity 0.4s ease;

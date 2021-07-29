@@ -57,13 +57,14 @@
     background-color: transparent;
     padding: 0;
     margin: 0;
-    margin-left: 10px;
+    margin-left: 40px;
   }
 
   .header-menu__link {
     display: block;
     border: none;
     background-color: transparent;
+    padding: 0;
   }
 
   .header-menu__svg {
@@ -76,7 +77,8 @@
     top: 70px;
     right: 0;
     display: none;
-    background-color: #999;
+    overflow: auto;
+    background-color: $color-black;
     padding: 15px;
     background-image: url(../../img/close.svg);
     background-repeat: no-repeat;
@@ -100,6 +102,13 @@
   
   .header-menu__item{
     margin-top: 16px;
+  }
+}
+
+
+@include breakpoint-down (600px){
+  .header-menu {
+    margin-left: 10px;
   }
 }
 
