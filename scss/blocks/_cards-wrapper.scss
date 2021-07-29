@@ -1,9 +1,13 @@
 .cards-wrapper{
     display: flex;
     align-items: flex-start;
-    justify-content: space-between ;
+    justify-content: flex-start ;
     padding-top: 64px;
     padding-bottom: 64px;
+}
+
+.cards-wrapper__box{
+    flex-grow: 1;
 }
 
 .cards-wrapper__list {
@@ -11,6 +15,7 @@
     align-items: center;
     @include list-unstyled;
     margin-left: -32px;
+    flex-shrink: 0;
 }
 
 .cards-wrapper__item {
@@ -18,9 +23,11 @@
     background-image: url(/img/card.png);
     background-color: #f4f8ec;
     padding: 48px 32px 32px;
-    width: 420px;
+    width: calc(100% / 2 -32px);
+    flex-shrink: 0;
     border-radius: 12px;
     margin-left: 32px;
+    flex-grow: 1;
 }
 
 .cards-wrapper__banner {
@@ -68,57 +75,49 @@
 }
 
 
-@include breakpoint-down (1230px) {
+@include breakpoint-down (1000px) {    
+    .cards-wrapper__list {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        @include list-unstyled;
+        margin-left: 0;
+        margin-top: -30px;
+        flex-shrink: 0;
+    }
+    
+    .cards-wrapper__item {
+        width: 100%;
+        margin-left: 0;
+        margin-top: 30px;
+        flex-grow: 1;
+    }
+}
+
+
+@include breakpoint-down (650px) {
     .cards-wrapper{
+        flex-direction: column;
+        align-items: stretch;
         justify-content: flex-start ;
+        width: 100%;
     }
-    
-    .cards-wrapper__item {
-        width: 350px;
-    }
-}
 
-
-@include breakpoint-down (1100px) {
-    .cards-wrapper{
-        justify-content: center ;
-    }
-    
     .cards-wrapper__list {
+        display: flex;
         flex-direction: column;
+        align-items: flex-start;
+        @include list-unstyled;
         margin-left: 0;
         margin-top: -30px;
+        flex-shrink: 0;
     }
     
     .cards-wrapper__item {
+        width: 100%;
         margin-left: 0;
         margin-top: 30px;
-    }
-
-    .cards-wrapper__title {
-        margin-bottom: 54px;
-    }
-}
-
-
-@include breakpoint-down (700px) {
-    .cards-wrapper{
-        flex-direction: column;
-        justify-content: flex-start;
-        align-items: center;
-        padding-top: 30px;
-        padding-bottom: 30px;
-    }
-    
-    .cards-wrapper__list {
-        flex-direction: column;
-        margin-top: -30px;
-    }
-    
-    .cards-wrapper__item {
-        margin-left: 0;
-        margin-top: 30px;
-        width: 327px;
+        flex-grow: 1;
     }
 }
 
