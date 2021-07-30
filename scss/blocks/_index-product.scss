@@ -1,9 +1,29 @@
+.index-product {
+  padding-top: 64px;
+  padding-bottom: 64px;
+}
+
 .index-product__section{
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
-  padding-top: 64px;
-  padding-bottom: 64px;
+}
+
+.index-product__section .products-card__box {
+  display: block;
+  flex-shrink: 0;
+  flex-wrap: wrap;
+  width: calc(100% / 3 - 32px);
+  background-color: #fff;
+  border: 1px solid #d1d1d1;
+  border-radius: 12px;
+  padding: 16px;
+  margin-top: 37px;
+  margin-left: 32px;
+}
+
+.index-product__section:not(:last-child){
+  margin-bottom: 30px;
 }
 
 .index-product__box{
@@ -27,6 +47,9 @@
   margin: 0;
   list-style: none;
   margin-bottom: 48px;
+  display: flex;
+  flex-direction: column;
+  align-self: flex-start;
 }
 
 .index-product__item:not(:last-child){
@@ -40,6 +63,11 @@
   font-size: 14px;
   line-height: 19px;
   color: $color-green;
+  transition: color 0.4s ease;
+
+  &:hover {
+    color: $color-border-dark-green;
+  }
 }
 
 .index-product__button {
@@ -56,8 +84,12 @@
   align-items: center;
   justify-content: space-between;
   stroke: $color-black;
+  border: 2px solid transparent;
+  transition: background-color 0.4s ease,
+    color 0.4s ease,
+    border 0.4s ease;
 
-  &::after{
+  &::after {
     content: "";
     width: 7px;
     height: 10px;
@@ -65,22 +97,104 @@
     background-repeat: no-repeat;
     background-size:contain;
     margin-left: 12px;
-    
+  }
+
+  &:hover {
+    color: $color-green;
+    border: 2px solid $color-green;
+    background-color: #fff;
   }
 }
 
 
-@include breakpoint-down (650px) {
-  .index-product__section{
-    flex-direction: column;
-    align-items: center;
+@include breakpoint-down (1160px) {
+  .index-product__section .products-card__box {
+    display: block;
+    flex-shrink: 0;
+    flex-wrap: wrap;
+    width: calc(100% / 2 - 32px);
+    background-color: #fff;
+    border: 1px solid #d1d1d1;
+    border-radius: 12px;
+    padding: 16px;
+    margin-top: 37px;
+    margin-left: 32px;
+  }
+}
+
+
+@include breakpoint-down (1000px) {
+  .index-product {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+}
+
+@include breakpoint-down (850px) {
+  .index-product__section .products-card__box {
+    display: block;
+    flex-shrink: 0;
+    flex-wrap: wrap;
+    width: calc(100% - 32px);
+    background-color: #fff;
+    border: 1px solid #d1d1d1;
+    border-radius: 12px;
+    padding: 16px;
+    margin-top: 37px;
+    margin-left: 32px;
+  }
+}
+
+
+@include breakpoint-down (800px) {
+  .index-product {
     padding-top: 30px;
     padding-bottom: 30px;
   }
+
+  .index-product__box{
+    margin-bottom: 30px;
+  }
+}
+
+
+@include breakpoint-down (600px) {
+  .index-product__section{
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .index-product__section .products-card__box {
+    display: block;
+    flex-shrink: 0;
+    flex-wrap: wrap;
+    width: 100%;
+    background-color: #fff;
+    border: 1px solid #d1d1d1;
+    border-radius: 12px;
+    padding: 16px;
+    margin-top: 37px;
+    margin-left: 32px;
+  }
   
   .index-product__box{
-    width: 327px;
+    width: 100%;
     flex-shrink: 0;
     margin-bottom: 30px;
+  }
+
+  .index-product__list {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: row;
+    align-self: flex-start;
+    flex-wrap: wrap;
+  }
+
+  .index-product__item:not(:last-child) {
+    margin-right: 20px;
   }
 }

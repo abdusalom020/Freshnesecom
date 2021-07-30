@@ -2,8 +2,8 @@
     display: flex;
     align-items: flex-start;
     justify-content: flex-start ;
-    padding-top: 64px;
-    padding-bottom: 64px;
+    // padding-top: 64px;
+    // padding-bottom: 64px;
 }
 
 .cards-wrapper__box{
@@ -60,6 +60,8 @@
     color: $color-black;
     background-color: transparent;
     white-space: nowrap;
+    transition: background-color 0.4s ease,
+        color 0.4s ease;
 
     &::after{
         content: "";
@@ -70,8 +72,12 @@
         width: 6px;
         height: 9px;
         margin-left: 13px;
-        
     }
+
+    &:hover {
+        color: $color-green;
+        background-color: #fff;
+      }
 }
 
 
