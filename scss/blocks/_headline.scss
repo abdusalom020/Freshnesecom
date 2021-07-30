@@ -41,3 +41,11 @@
     margin-left: 13px;
   }
 }
+
+
+@include breakpoint-down (1000px) {
+  .headline {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+}
