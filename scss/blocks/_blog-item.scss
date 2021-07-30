@@ -1,0 +1,59 @@
+.blog-item__link {
+  text-decoration: none;
+}
+
+.blog-item__title {
+  font-family: $poppins;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 22px;
+  color: $color-black;
+  margin: 0;
+  margin-bottom: 16px;
+  width: 225px;
+  margin-right: 48px;
+}
+
+.blog__item:not(:last-child) {
+  margin-bottom: 32px;
+}
+
+.blog-item__img-box {
+  display: flex;
+  align-items: center;
+
+  &::before{
+    order: 1;
+  content: "";
+  width: 96px;
+  height: 96px;
+  display: block;
+  background-image: url("../../img/img-salat.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+}
+
+.blog-item__breakfast::before{
+  background-image: url("../../img/img-breakfast.png");
+}
+
+.blog-item__bread::before{
+  background-image: url("../../img/img-bread.png");
+}
+
+@include cssretina {
+
+  .blog-item__img-box::before {
+    background-image: url("../../img/img-salat@2x.png");
+}
+
+.blog-item__breakfast::before{
+  background-image: url("../../img/img-breakfast@2x.png");
+}
+
+.blog-item__bread::before{
+  background-image: url("../../img/img-bread@2x.png");
+}
+}

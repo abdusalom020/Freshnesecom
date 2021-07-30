@@ -1,0 +1,20 @@
+.blog__box {
+  display: flex;
+}
+
+.blog__list{
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: flex;
+  .tip__time-span{
+    color: $color-black;
+
+    &::before {
+      display: none;
+    }
+  }
+  .tip__time {
+    color: $color-black;
+  }
+}
