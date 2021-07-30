@@ -1,0 +1,79 @@
+.tip__link {
+  text-decoration: none;
+}
+
+.tip__box {
+  background-image: url("../../img/img-dinner.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 469px;
+  padding: 24px;
+  border-radius: 13px;
+}
+
+.tip__dinner {
+  font-family: $poppins;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 18px;
+  color: $color-green;
+  background-color: #F4F8EC;
+  border-radius: 12px;
+  padding: 5px 8px;
+}
+
+.tip__title {
+  font-family: $poppins;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 33px;
+  color: #FFFFFF;
+  margin: 0;
+  margin-top: 228px;
+}
+
+.tip__time-box {
+display: flex;
+align-items: center;
+margin-top: 8px;
+}
+
+.tip__time-span {
+  font-family: $open-sans;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 16px;
+  margin-right: 16px;
+  color: #FFFFFF;
+  display: flex;
+  align-items: center;
+
+  &::before {
+    content: "";
+    width: 32px;
+    height: 32px;
+    background-image: url("../../img/img-author.png");
+    margin-right: 8px;
+    border-radius: 50%;
+    background-size: contain;
+  }
+}
+
+.tip__time {
+  color: #FFFFFF;
+  font-family: $open-sans;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 16px;
+}
+
+
+@include cssretina {
+
+  .tip__box {
+    background-image: url("../../img/img-dinner@2x.png");
+  }
+ .tip__time-span::before {
+    background-image: url("../../img/img-author@2x.png");
+  }
+}
