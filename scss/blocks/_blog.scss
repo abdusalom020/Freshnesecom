@@ -1,6 +1,7 @@
 .blog__box {
   display: flex;
   align-items: flex-start;
+  width: 100%;
 }
 
 .blog__link-box {
@@ -13,7 +14,8 @@
   background-size: cover;
   border-radius: 12px;
   margin-right: 31px;
-  width: calc(100% - 59% +31px);
+  width: calc(100% - 59% + 31px);
+  flex-shrink: 0;
 }
 
 .blog__card {
@@ -96,7 +98,7 @@
   align-items: flex-start;
   justify-content: flex-start;
   text-decoration: none;
-  width: calc(100% - 40% + 31px);
+  width: calc(100% - 60% + 31px);
 
   &::before {
     content: "";
