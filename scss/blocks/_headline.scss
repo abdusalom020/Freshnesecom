@@ -54,3 +54,11 @@
     padding-bottom: 40px;
   }
 }
+
+
+@include breakpoint-down (850px) {
+  .headline__customers {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+}

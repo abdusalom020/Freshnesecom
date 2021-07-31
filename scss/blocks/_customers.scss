@@ -136,55 +136,35 @@
   .customers {
     margin-left: -24px;
     margin-right: -24px;
-    padding-left: 24px;
-    padding-right: 24px;
   }
   
-  .customers__btns {
-    margin-left: -24px;
-    margin-right: -24px;
+  .customers__btn-item {
+    width: 30px;
   }
-
+  
+  .customers__btn-items {
+    width: 30px;
+  }
+  
   .customers__btn {
-    display: block;
-    border: none;
-    width: 88px;
-    height: 227px;
-    background-repeat: no-repeat;
-    background-color: transparent;
-    background-size: 24px;
-    padding: 0;
+    width: 24px;
+    height: 40px;
+  }
+  
+  .customers__left-btn {
+    background-size: cover;
+  }
+  
+  .customers__right-btn {
+    background-size: cover;
+  }
+  
+  .customers__list {
+    justify-content: flex-start;
+    padding-left: 24px;
   }
   
   .customers__item {
-    position: relative;
-    z-index: 10;
     width: 325px;
-    background: #fff;
-    border: 1px solid #f1f1f1;
-    border-radius: 12px;
-    padding: 24px 32px 40px;
-    flex-grow: 1;
-    flex-shrink: 0;
-  
-    &::after{
-      content: "";
-      position: absolute;
-      z-index: 1;
-      bottom: -24px;
-      left: 50%;
-      transform: translateX(-50%);
-      display: block;
-      background: rgba(0, 0, 0, 1);
-      background-repeat: no-repeat;
-      background-position: center;
-      width: 48px;
-      height: 48px;
-      border-radius: 50%;
-    }
-  }
-
-  .customers__item:not(:last-child) {
-    margin-right: 20px;
   }
 }
