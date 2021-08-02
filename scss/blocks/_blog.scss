@@ -455,3 +455,31 @@
     line-height: 27px;
   }
 }
+
+
+@include cssretina {
+  .blog__link-box {
+    background-image: url(../../img/img-dinner@2x.png);
+  }
+
+
+  .blog__author::before {
+    background-image: url(../../img/img-author@2x.png);
+  }
+
+  .blog__eat-column::before {
+    background-image: url(../../img/img-vegetable@2x.png);
+  }
+
+  .blog__salat::after {
+    background-image: url(../../img/img-salat@2x.png);
+  }
+  
+  .blog__breakfast::after {
+    background-image: url(../../img/img-breakfast@2x.png);
+  }
+  
+  .blog__bread::after {
+    background-image: url(../../img/img-bread@2x.png);
+  }
+}
