@@ -1,26 +1,32 @@
 .index-catigory {
-  display: flex;
-  align-items: center;
   padding-top: 16px;
   padding-bottom: 16px;
+}
+
+.index-catigory__list {
+  display: flex;
+  align-items: center;
   font-family: $open-sans;
   font-weight: normal;
   font-size: 12px;
   line-height: 16px;
   color: #d1d1d1;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.index-catigory__item:not(:last-child) {
+  margin-right: 8px;
+}
+
+.index-catigory__item:not(:first-child) {
+  margin-left: 8px;
 }
 
 .index-catigory__link {
   text-decoration: none;
   color: #d1d1d1;
-}
-
-.index-catigory__link:not(:last-child) {
-  margin-right: 8px;
-}
-
-.index-catigory__link:last-child {
-  margin-left: 8px;
 }
 
 .index-catigory__link--active {
