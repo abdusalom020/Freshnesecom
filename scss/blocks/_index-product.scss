@@ -158,7 +158,7 @@
 }
 
 
-@include breakpoint-down (600px) {
+@include breakpoint-down (650px) {
   .index-product__section{
     flex-direction: column;
     align-items: center;

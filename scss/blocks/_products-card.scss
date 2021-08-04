@@ -165,7 +165,7 @@
 }
 
 
-@include breakpoint-down (600px) {
+@include breakpoint-down (650px) {
   .products-card {
     display: flex;
     align-items: flex-start;

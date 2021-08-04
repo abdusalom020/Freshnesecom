@@ -1,12 +1,3 @@
-// var elsHeader = document.querySelector('.site-header');
-// var elsHeaderNavBtn = elsHeader.querySelector('.site-header__btn');
-
-// if (elsHeaderNavBtn){
-//   elsHeaderNavBtn.addEventListener('click', function() {
-//     elsHeader.classList.toggle('site-header--open');
-//   });
-// }
-
 //MODAL SEARCH
 
 var elHeaderMainMobileSearch = document.querySelector(".header-main__mobile-search");
@@ -28,11 +19,7 @@ if (elHeaderMainForm) {
   });
 }
 
-// window.onclick = function(event) {
-//   if (event.target == elHeaderMainForm) {
-//     elHeaderMainForm.classList.remove('header-main__modal--open');
-//   }
-// }
+// MENU GAMBURGER
 
 var elHeaderMenuLink = document.querySelector(".header-menu__link");
 var elHeaderMenuBox = document.querySelector(".header-menu__box");
@@ -40,20 +27,17 @@ var elHeaderMenuBox = document.querySelector(".header-menu__box");
 if (elHeaderMenuLink) {
   elHeaderMenuLink.addEventListener('click', function (evt) {
     evt.preventDefault();
-    elHeaderMenuBox.classList.add('header-menu__box--open');
+    elHeaderMenuBox.classList.toggle('header-menu__box--open');
   });
 }
 
-// window.onclick = function(event) {
-//   if (event.target == elHeaderMenuBox) {
-//     elHeaderMenuBox.classList.remove('header-menu__box--open');
-//   }
-// }
+// CLOSE CATIGORY BTN
 
-if (elHeaderMenuBox) {
-  elHeaderMenuBox.addEventListener('click', function (evt) {
-    if (evt.target.matches('.header-menu__box')) {
-      elHeaderMenuBox.classList.remove('header-menu__box--open');
-    }
-  });
-}
+var elsCatigoryCheckBtn = document.querySelectorAll(".catigory__check-btn");
+var elsCatigoryChecked = document.querySelectorAll(".catigory__checked");
+
+elsCatigoryCheckBtn.forEach(function (list) {
+  list.addEventListener('click', function () {
+    list.closest("p").remove(".catigory__checked");
+  });  
+});

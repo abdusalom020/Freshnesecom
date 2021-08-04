@@ -130,7 +130,7 @@
 .catigory__filter-check {
   position: absolute;
   z-index: 1;
-  top: -1px;
+  top: -2px;
   left: -30px;
   width: 20px;
   height: 20px;
@@ -315,9 +315,29 @@
   margin-bottom: 32px;
 }
 
+.catigory__product-img-boxing {
+  position: relative;
+  z-index: 1;
+  flex-shrink: 0;
+  width: 31%;
+  display: block;
+}
+
 .catigory__product-img {
   display: block;
   border-radius: 12px;
+}
+
+.catigory__product-img-sale {
+  position: absolute;
+  z-index: 1;
+  top: 12px;
+  left: 20px;
+  font-family: $poppins;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 18px;
+  color: $color-green;
 }
 
 .catigory__product-info {
