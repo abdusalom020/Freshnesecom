@@ -238,16 +238,16 @@
         <div class="catigory__form-part">
           <form class="catigory__form" action="https://echo.htmlacademy.ru" method="GET">
             <label class="catigory__filter-box">
-              <div class="catigory__filter-radio">
+              <label class="catigory__filter-radio">
                 <input class="catigory__filter" type="radio" name="filtre" required>
                 <span class="catigory__filter-check"></span>
-              </div>
-              <span class="catigory__filter-label">Filtre text</span>
-              <div class="catigory__filter-radio">
+                Filtre text
+              </label>
+              <label class="catigory__filter-radio">
                 <input class="catigory__filter" type="radio" name="filtre" required>
                 <span class="catigory__filter-check"></span>
-              </div>
-              Filtre text
+                Filtre text
+              </label>
             </label>
 
             <label class="catigory__filter-box">
@@ -269,7 +269,7 @@
               <span class="catigory__box-check"></span>
               Filtre
               <span class="catigory__filter-number">12</span>
-              <select class="catigory__select" name="select-filtre" style="-webkit-appearance: none;">
+              <select class="catigory__select" name="select-filtre">
                 <option value="Select">Select</option>
                 <option value="Bakery">value 01</option>
                 <option value="Fruit and vegetables">value 01</option>
@@ -284,6 +284,10 @@
           </form>
           <div class="catigory__form-checks-info">
             <p class="catigory__form-text">Applied filtres:</p>
+            <p class="catigory__checked">
+              Selected Filtre
+              <button class="catigory__check-btn" type="button"></button>
+            </p>
             <p class="catigory__checked">
               Selected Filtre
               <button class="catigory__check-btn" type="button"></button>
