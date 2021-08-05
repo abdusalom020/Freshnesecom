@@ -148,15 +148,22 @@
     margin-right: auto;
   }
 
-  .header-main__mobile-search{
+  .header-main__mobile-search {
     display: block;
     border: none;
-    width: 24px;
-    height: 24px;
     background-color: transparent;
     margin-right: 40px;
-    flex-shrink: 0;
-    stroke: $color-black;
+    width: 24px;
+    height: 24px;
+    background-image: url(../../img/search.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    transition: background-image 0.4s ease;
+
+    &:hover {
+      background-image: url(../../img/search-active.svg);
+    }
   }
 
   .header-main__modal{

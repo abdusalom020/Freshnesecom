@@ -1,6 +1,7 @@
 .index-catigory {
   padding-top: 16px;
   padding-bottom: 16px;
+  overflow: auto;
 }
 
 .index-catigory__list {
@@ -31,4 +32,13 @@
 
 .index-catigory__link--active {
   color: $color-black;
+}
+
+
+@include breakpoint-down (500px) {
+  .index-catigory {
+    padding-top: 8px;
+    padding-bottom: 8px;
+    overflow: auto;
+  }
 }
