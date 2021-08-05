@@ -3167,8 +3167,26 @@ img {
 }
 
 .catigory__product-stars {
-  display: block;
+  position: relative;
+  z-index: 1;
+  width: 89px;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
   margin-bottom: 25px;
+}
+
+.catigory__product-full {
+  position: absolute;
+  z-index: 1;
+  left: 0;
+  width: 100%;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  overflow: hidden;
 }
 
 .catigory__product-grid-stile .catigory__product-stars {
@@ -3612,10 +3630,13 @@ img {
         -ms-flex-direction: row;
             flex-direction: row;
     margin-top: -48px;
-    margin-left: 0;
+    margin-left: -32px;
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
   }
   .catigory__product-grid-stile .catigory__product-box {
-    width: 30.3%;
+    width: calc(33.33% - 32px);
     padding: 16px;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -3628,13 +3649,10 @@ img {
         -ms-flex-align: start;
             align-items: flex-start;
     margin-top: 48px;
-    margin-left: 0;
-  }
-  .catigory__product-grid-stile .catigory__product-box:nth-child(1n) {
-    margin-right: 32px;
-  }
-  .catigory__product-grid-stile .catigory__product-box:nth-child(2n) {
-    margin-right: 32px;
+    margin-left: 32px;
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
   }
   .catigory__product-grid-stile .catigory__product-box:not(:last-child) {
     margin-bottom: 0;
@@ -3688,6 +3706,22 @@ img {
   }
   .catigory__filter-box:not(:last-child) {
     margin-right: 0;
+  }
+  .catigory__product-grid-stile .catigory__products-right {
+    margin-left: 0;
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
+  }
+  .catigory__product-grid-stile .catigory__product-box {
+    width: calc(50% - 32px);
+    margin-left: 0;
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
+  }
+  .catigory__product-grid-stile .catigory__product-box:nth-child(odd) {
+    margin-right: 32px;
   }
 }
 
@@ -3894,6 +3928,16 @@ img {
   }
   .catigory__product-box:not(:last-child) {
     margin-bottom: 0;
+  }
+  .catigory__product-grid-stile .catigory__product-box {
+    width: 100%;
+    margin-left: 0;
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
+  }
+  .catigory__product-grid-stile .catigory__product-box:nth-child(odd) {
+    margin-right: 0;
   }
   .catigory__footer {
     display: -webkit-box;
