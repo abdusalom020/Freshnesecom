@@ -993,6 +993,10 @@ img {
   margin-bottom: 32px;
 }
 
+.shopping__item-close {
+  display: none;
+}
+
 .shopping__cart-left {
   width: calc(32% - 16px);
   -ms-flex-negative: 0;
@@ -1044,6 +1048,7 @@ img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  cursor: pointer;
 }
 
 .shopping__cart-left-button::before {
@@ -1059,6 +1064,14 @@ img {
 
 .shopping__cart-left-wish::before {
   background-image: url(../../img/hurt.svg);
+}
+
+.shopping__cart-wish--active.shopping__cart-left-wish::before {
+  background-image: url(../../img/hurt-red.svg);
+}
+
+.shopping__cart-wish--active.shopping__cart-left-wish {
+  color: #151515;
 }
 
 .shopping__cart-left-compare::before {

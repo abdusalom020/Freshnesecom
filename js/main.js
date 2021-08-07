@@ -77,11 +77,10 @@ if (elHeaderMenuLink) {
 // CLOSE CATIGORY BTN
 
 var elsCatigoryCheckBtn = document.querySelectorAll(".catigory__check-btn");
-var elsCatigoryChecked = document.querySelectorAll(".catigory__checked");
 
 elsCatigoryCheckBtn.forEach(function (list) {
   list.addEventListener('click', function () {
-    list.closest("p").remove(".catigory__checked");
+    list.closest("p").remove();
   });  
 });
 
@@ -94,3 +93,24 @@ if (elCatigoryProductMobileBtn) {
     elCatigoryProductsLeft.classList.toggle('catigory__settings--open');
   });
 }
+
+
+
+// SHOPPING ACTIVE
+
+var elsShoppingCartWish = document.querySelectorAll('.shopping__cart-left-wish');
+var elsShoppingCartClose = document.querySelectorAll('.shopping__cart-left-remove');
+var elShoppingItem = document.querySelector('.shopping__item');
+
+elsShoppingCartWish.forEach(function (w) {
+  w.addEventListener('click', function () {
+    w.classList.toggle("shopping__cart-wish--active");
+  });
+});
+
+
+elsShoppingCartClose.forEach(function (c) {
+  c.addEventListener('click', function () {
+    c.closest("li").parentElement.parentElement.parentElement.remove();
+  });
+});  
