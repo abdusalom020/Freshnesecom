@@ -12,7 +12,7 @@
 <body>
   <div class="container">
     <header class="site-header">
-
+      <h1 class="visually-hidden">Header</h1>
       <nav class="site-header__nav nav">
         <div class="nav__box">
           <ul class="nav__contact-list">
@@ -40,7 +40,8 @@
         </div>
       </nav>
 
-      <section class="site-header__main header-main">
+      <section class="site-header__main header-main shopping">
+        <h2 class="visually-hidden">Site header main</h2>
         <a class="header-main__logo-link" href="#"><img class="header-main__logo-img" src="img/logo.svg" alt="logo"
             width="177" height="18"></a>
         <button class="header-main__mobile-search" type="button"></button>
@@ -78,9 +79,112 @@
           </svg>
           <span class="header-main__cart-number">4</span>
         </a>
+        <div class="shopping__cart">
+          <div class="shopping__header">
+            <h3 class="shopping__header-heading">Shopping cart</h3>
+            <button class="shopping__header-close" type="button"></button>
+          </div>
+          <ul class="shopping__list">
+            <li class="shopping__item catigory">
+              <div class="shopping__cart-left">
+                <img class="shopping__cart-left-img" src="https://via.placeholder.com/268x280?text=PRODUCT" width="100" height="67" alt="cart img">
+                <ul class="shopping__cart-left-list">
+                  <li class="shopping__cart-left-item">
+                    <button class="shopping__cart-left-button shopping__cart-left-wish">Wishlist</button>
+                  </li>
+                  <li class="shopping__cart-left-item">
+                    <button class="shopping__cart-left-button shopping__cart-left-compare">Compare</button>
+                  </li>
+                  <li class="shopping__cart-left-item">
+                    <button class="shopping__cart-left-button shopping__cart-left-remove">Remove</button>
+                  </li>
+                </ul>
+              </div>
+              <div class="shopping__cart-right">
+                <h4 class="shopping__cart-right-heading">Product-title</h4>
+                <table>
+                  <tr class="shopping__cart-right-tr">
+                    <th class="shopping__cart-right-th">Farm:</th>
+                    <td class="shopping__cart-right-td">Tharamis Farm</td>
+                  </tr>
+                  <tr class="shopping__cart-right-tr">
+                    <td class="shopping__cart-right-th">Freshness:</td>
+                    <td class="shopping__cart-right-td">1 day old</td>
+                  </tr>
+                </table>
+                <div class="catigory__product-stars">
+                  <img class="catigory__product-empty" src="img/empty.png" alt="stars" width="89" height="16">
+                  <div class="catigory__product-full-box">
+                    <img class="catigory__product-full" src="img/star-full.png" alt="" width="17" height="16">
+                    <img class="catigory__product-full" src="img/star-full.png" alt="" width="17" height="16">
+                    <img class="catigory__product-full" src="img/star-full.png" alt="" width="17" height="16">
+                    <img class="catigory__product-full" src="img/star-full.png" alt="" width="17" height="16">
+                    <img class="catigory__product-full" src="img/star-full.png" alt="" width="17" height="16">
+                  </div>
+                </div>
+                <div class="shopping__cart-right-money">
+                  <p class="shopping__cart-right-price">36.99 USD <span class="shopping__cart-right-sale">48.56 USD</span></p>
+                  <button class="shopping__cart-right-btn"><span class="shopping__cart-right-pcs">1 pcs</span>Pcs</button>
+                </div>
+              </div>
+            </li>
+            <li class="shopping__item catigory">
+              <div class="shopping__cart-left">
+                <img class="shopping__cart-left-img" src="https://via.placeholder.com/268x280?text=PRODUCT" width="100" height="67" alt="cart img">
+                <ul class="shopping__cart-left-list">
+                  <li class="shopping__cart-left-item">
+                    <button class="shopping__cart-left-button shopping__cart-left-wish">Wishlist</button>
+                  </li>
+                  <li class="shopping__cart-left-item">
+                    <button class="shopping__cart-left-button shopping__cart-left-compare">Compare</button>
+                  </li>
+                  <li class="shopping__cart-left-item">
+                    <button class="shopping__cart-left-button shopping__cart-left-remove">Remove</button>
+                  </li>
+                </ul>
+              </div>
+              <div class="shopping__cart-right">
+                <h4 class="shopping__cart-right-heading">Product-title</h4>
+                <table>
+                  <tr class="shopping__cart-right-tr">
+                    <th class="shopping__cart-right-th">Farm:</th>
+                    <td class="shopping__cart-right-td">Tharamis Farm</td>
+                  </tr>
+                  <tr class="shopping__cart-right-tr">
+                    <td class="shopping__cart-right-th">Freshness:</td>
+                    <td class="shopping__cart-right-td">1 day old</td>
+                  </tr>
+                </table>
+                <div class="catigory__product-stars">
+                  <img class="catigory__product-empty" src="img/empty.png" alt="stars" width="89" height="16">
+                  <div class="catigory__product-full-box">
+                    <img class="catigory__product-full" src="img/star-full.png" alt="" width="17" height="16">
+                    <img class="catigory__product-full" src="img/star-full.png" alt="" width="17" height="16">
+                    <img class="catigory__product-full" src="img/star-full.png" alt="" width="17" height="16">
+                    <img class="catigory__product-full" src="img/star-full.png" alt="" width="17" height="16">
+                    <img class="catigory__product-full" src="img/star-full.png" alt="" width="17" height="16">
+                  </div>
+                </div>
+                <div class="shopping__cart-right-money">
+                  <p class="shopping__cart-right-price">36.99 USD <span class="shopping__cart-right-sale">48.56 USD</span></p>
+                  <button class="shopping__cart-right-btn"><span class="shopping__cart-right-pcs">1 pcs</span>Pcs</button>
+                </div>
+              </div>
+            </li>
+          </ul>
+          <div class="shopping__footer">
+            <span class="shopping__footer-info">Subtotal</span>
+            <p class="shopping__footer-allprice">73.98 USD</p>
+            <div class="shopping__footer-box">
+              <p class="shopping__footer-text">Continue shopping</p>
+              <a class="shopping__footer-link" href="#">Go to Checkout</a>
+            </div>
+          </div>
+        </div>
       </section>
 
       <section class="site-header__menu header-menu">
+        <h2 class="visually-hidden">site header menu</h2>
         <button class="header-menu__link" type="button">
           <svg class="header-menu__svg" width="24" height="20">
             <path fill-rule="evenodd" clip-rule="evenodd" d="M0 0h24v2H0V0zm0 8h24v2H0V8zm24 8H0v2h24v-2z"
@@ -221,7 +325,8 @@
       </div>
 
       <section class="site-main__catigory catigory">
-        <form action="https://echo.htmlacademy.ru" method="GET">
+        <h2 class="visually-hidden">Catigory</h2>
+        <form class="catigory__form-dad" action="https://echo.htmlacademy.ru" method="GET">
           <div class="catigory__header">
             <h2 class="catigory__heading">Fruit and vegetables</h2>
             <ul class="catigory__list">
@@ -246,19 +351,19 @@
             <div class="catigory__form">
               <div class="catigory__filter-box">
                 <label class="catigory__filter-radio">
-                  <input class="catigory__filter" type="radio" name="filtre">
+                  <input class="catigory__filter" type="radio" name="radio2">
                   <span class="catigory__filter-check"></span>
                   Filtre text
                 </label>
                 <label class="catigory__filter-radio">
-                  <input class="catigory__filter" type="radio" name="filtre">
+                  <input class="catigory__filter" type="radio" name="radio2">
                   <span class="catigory__filter-check"></span>
                   Filtre text
                 </label>
               </div>
               <div class="catigory__filter-box">
                 <label class="catigory__filter-radio">
-                  <input class="catigory__filter-checkbox" type="checkbox" name="filtre-checkbox">
+                  <input class="catigory__filter-checkbox" type="checkbox" name="filtre1">
                   <span class="catigory__box-check"></span>
                   Filtre
               </label>
@@ -266,7 +371,7 @@
               </div>
               <div class="catigory__filter-box">
                 <label class="catigory__filter-radio">
-                  <input class="catigory__filter-checkbox" type="checkbox" name="filtre-checkbox1">
+                  <input class="catigory__filter-checkbox" type="checkbox" name="filtre2">
                   <span class="catigory__box-check"></span>
                   Filtre
               </label>
@@ -275,12 +380,12 @@
           
               <div class="catigory__filter-box">
                 <label class="catigory__filter-radio">
-                  <input class="catigory__filter-checkbox" type="checkbox" name="filtre-checkbox2">
+                  <input class="catigory__filter-checkbox" type="checkbox" name="filtre3">
                   <span class="catigory__box-check"></span>
                   Filtre
               </label>
                 <span class="catigory__filter-nbm">12</span>
-                <select class="catigory__select" name="select-filtre3">
+                <select class="catigory__select" name="select">
                   <option value="Select">Select</option>
                   <option value="Bakery">value 01</option>
                   <option value="Fruit and vegetables">value 02</option>
@@ -332,27 +437,27 @@
                   <li class="settings__item">
                     <h3 class="settings__heading">Brands</h3>
                     <label class="settings__brand">
-                      <input class="settings__brand-field" type="checkbox" name="brand-item1">
+                      <input class="settings__brand-field" type="checkbox" name="brand1">
                       <span class="settings__box-check"></span>
                       Filtre by brand item
                     </label>
                     <label class="settings__brand">
-                      <input class="settings__brand-field" type="checkbox" name="brand-item2">
+                      <input class="settings__brand-field" type="checkbox" name="brand2">
                       <span class="settings__box-check"></span>
                       Filtre by brand item
                     </label>
                     <label class="settings__brand">
-                      <input class="settings__brand-field" type="checkbox" name="brand-item3">
+                      <input class="settings__brand-field" type="checkbox" name="brand3">
                       <span class="settings__box-check"></span>
                       Filtre by brand item
                     </label>
                     <label class="settings__brand">
-                      <input class="settings__brand-field" type="checkbox" name="brand-item4">
+                      <input class="settings__brand-field" type="checkbox" name="brand4">
                       <span class="settings__box-check"></span>
                       Filtre by brand item
                     </label>
                     <label class="settings__brand">
-                      <input class="settings__brand-field" type="checkbox" name="brand-item5">
+                      <input class="settings__brand-field" type="checkbox" name="brand5">
                       <span class="settings__box-check"></span>
                       Filtre by brand item
                     </label>
@@ -360,27 +465,27 @@
                   <li class="settings__item">
                     <h3 class="settings__heading">Rating</h3>
                     <label class="settings__brand">
-                      <input class="settings__brand-field" type="checkbox" name="Rating1">
+                      <input class="settings__brand-field" type="checkbox" name="stars5">
                       <span class="settings__box-check"></span>
                       <img class="settings__rating-img" src="img/stars-five.png" alt="stars">
                     </label>
                     <label class="settings__brand">
-                      <input class="settings__brand-field" type="checkbox" name="Rating2">
+                      <input class="settings__brand-field" type="checkbox" name="stars4">
                       <span class="settings__box-check"></span>
                       <img class="settings__rating-img" src="img/stars-for.png" alt="stars">
                     </label>
                     <label class="settings__brand">
-                      <input class="settings__brand-field" type="checkbox" name="Rating3">
+                      <input class="settings__brand-field" type="checkbox" name="stars3">
                       <span class="settings__box-check"></span>
                       <img class="settings__rating-img" src="img/stars-three.png" alt="stars">
                     </label>
                     <label class="settings__brand">
-                      <input class="settings__brand-field" type="checkbox" name="Rating4">
+                      <input class="settings__brand-field" type="checkbox" name="stars2">
                       <span class="settings__box-check"></span>
                       <img class="settings__rating-img" src="img/stars-two.png" alt="stars">
                     </label>
                     <label class="settings__brand">
-                      <input class="settings__brand-field" type="checkbox" name="Rating5">
+                      <input class="settings__brand-field" type="checkbox" name="stars1">
                       <span class="settings__box-check"></span>
                       <img class="settings__rating-img" src="img/stars-one.png" alt="stars">
                     </label>
@@ -391,14 +496,14 @@
                     <div class="settings__min-max">
                       <label class="settings__max">
                         Min
-                        <input class="settings__min" type="number-min" name="min" placeholder="0" min="1">
+                        <input class="settings__min" type="number" name="min" placeholder="0" min="1">
                       </label>
                       <span class="settings__line">-</span>
                       <label class="settings__max">
                         Max
-                        <input class="settings__min" type="number-max" name="min" placeholder="000" min="1">
+                        <input class="settings__min" type="number" name="max" placeholder="000" min="1">
                       </label>
-                    </div>
+                   </div>
                   </li>
                 </ul>
                 <div class="settings__btn-box">
@@ -419,7 +524,13 @@
                     <p class="catigory__product-text">Space for a small product description </p>
                     <div class="catigory__product-stars">
                       <img class="catigory__product-empty" src="img/empty.png" alt="stars" width="89" height="16">
-                      <img class="catigory__product-full" src="img/full.png" alt="stars" width="89" height="16">
+                      <div class="catigory__product-full-box">
+                        <img class="catigory__product-full" src="img/star-full.png" alt="" width="17" height="16">
+                        <img class="catigory__product-full" src="img/star-full.png" alt="" width="17" height="16">
+                        <img class="catigory__product-full" src="img/star-full.png" alt="" width="17" height="16">
+                        <img class="catigory__product-full" src="img/star-full.png" alt="" width="17" height="16">
+                        <img class="catigory__product-full" src="img/star-full.png" alt="" width="17" height="16">
+                      </div>
                     </div>
                     <ul class="catigory__info-list">
                       <li class="catigory__info-item">
@@ -474,7 +585,13 @@
                     <p class="catigory__product-text">Space for a small product description </p>
                     <div class="catigory__product-stars">
                       <img class="catigory__product-empty" src="img/empty.png" alt="stars" width="89" height="16">
-                      <img class="catigory__product-full" src="img/full.png" alt="stars" width="89" height="16">
+                      <div class="catigory__product-full-box">
+                        <img class="catigory__product-full" src="img/star-full.png" alt="" width="17" height="16">
+                        <img class="catigory__product-full" src="img/star-full.png" alt="" width="17" height="16">
+                        <img class="catigory__product-full" src="img/star-full.png" alt="" width="17" height="16">
+                        <img class="catigory__product-full" src="img/star-full.png" alt="" width="17" height="16">
+                        <img class="catigory__product-full" src="img/star-full.png" alt="" width="17" height="16">
+                      </div>
                     </div>
                     <ul class="catigory__info-list">
                       <li class="catigory__info-item">
@@ -529,7 +646,13 @@
                     <p class="catigory__product-text">Space for a small product description </p>
                     <div class="catigory__product-stars">
                       <img class="catigory__product-empty" src="img/empty.png" alt="stars" width="89" height="16">
-                      <img class="catigory__product-full" src="img/full.png" alt="stars" width="89" height="16">
+                      <div class="catigory__product-full-box">
+                        <img class="catigory__product-full" src="img/star-full.png" alt="" width="17" height="16">
+                        <img class="catigory__product-full" src="img/star-full.png" alt="" width="17" height="16">
+                        <img class="catigory__product-full" src="img/star-full.png" alt="" width="17" height="16">
+                        <img class="catigory__product-full" src="img/star-full.png" alt="" width="17" height="16">
+                        <img class="catigory__product-full" src="img/star-full.png" alt="" width="17" height="16">
+                      </div>
                     </div>
                     <ul class="catigory__info-list">
                       <li class="catigory__info-item">
@@ -584,7 +707,13 @@
                     <p class="catigory__product-text">Space for a small product description </p>
                     <div class="catigory__product-stars">
                       <img class="catigory__product-empty" src="img/empty.png" alt="stars" width="89" height="16">
-                      <img class="catigory__product-full" src="img/full.png" alt="stars" width="89" height="16">
+                      <div class="catigory__product-full-box">
+                        <img class="catigory__product-full" src="img/star-full.png" alt="" width="17" height="16">
+                        <img class="catigory__product-full" src="img/star-full.png" alt="" width="17" height="16">
+                        <img class="catigory__product-full" src="img/star-full.png" alt="" width="17" height="16">
+                        <img class="catigory__product-full" src="img/star-full.png" alt="" width="17" height="16">
+                        <img class="catigory__product-full" src="img/star-full.png" alt="" width="17" height="16">
+                      </div>
                     </div>
                     <ul class="catigory__info-list">
                       <li class="catigory__info-item">
@@ -639,7 +768,13 @@
                     <p class="catigory__product-text">Space for a small product description </p>
                     <div class="catigory__product-stars">
                       <img class="catigory__product-empty" src="img/empty.png" alt="stars" width="89" height="16">
-                      <img class="catigory__product-full" src="img/full.png" alt="stars" width="89" height="16">
+                      <div class="catigory__product-full-box">
+                        <img class="catigory__product-full" src="img/star-full.png" alt="" width="17" height="16">
+                        <img class="catigory__product-full" src="img/star-full.png" alt="" width="17" height="16">
+                        <img class="catigory__product-full" src="img/star-full.png" alt="" width="17" height="16">
+                        <img class="catigory__product-full" src="img/star-full.png" alt="" width="17" height="16">
+                        <img class="catigory__product-full" src="img/star-full.png" alt="" width="17" height="16">
+                      </div>
                     </div>
                     <ul class="catigory__info-list">
                       <li class="catigory__info-item">
@@ -694,7 +829,13 @@
                     <p class="catigory__product-text">Space for a small product description </p>
                     <div class="catigory__product-stars">
                       <img class="catigory__product-empty" src="img/empty.png" alt="stars" width="89" height="16">
-                      <img class="catigory__product-full" src="img/full.png" alt="stars" width="89" height="16">
+                      <div class="catigory__product-full-box">
+                        <img class="catigory__product-full" src="img/star-full.png" alt="" width="17" height="16">
+                        <img class="catigory__product-full" src="img/star-full.png" alt="" width="17" height="16">
+                        <img class="catigory__product-full" src="img/star-full.png" alt="" width="17" height="16">
+                        <img class="catigory__product-full" src="img/star-full.png" alt="" width="17" height="16">
+                        <img class="catigory__product-full" src="img/star-full.png" alt="" width="17" height="16">
+                      </div>
                     </div>
                     <ul class="catigory__info-list">
                       <li class="catigory__info-item">
@@ -761,6 +902,7 @@
     </main>
 
     <footer class="site-footer">
+      <h1 class="visually-hidden">Footer</h1>
       <section class="footer-top">
         <h2 class="visually-hidden">footer</h2>
 

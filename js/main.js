@@ -1,3 +1,26 @@
+// GRID AND LIST
+
+var elCatigory = document.querySelector(".catigory__form-dad");
+var elCatigoryBtnGrid = document.querySelector(".catigory__btn-grid");
+var elCatigoryBtnList = document.querySelector(".catigory__btn-list");
+
+if (elCatigoryBtnGrid) {
+  elCatigoryBtnGrid.addEventListener('click', function() {
+    elCatigoryBtnGrid.classList.add('catigory__btn--active');
+    elCatigoryBtnList.classList.remove('catigory__btn--active');
+    elCatigory.classList.add('catigory__product-grid-stile');
+  });
+};
+
+if (elCatigoryBtnList) {
+  elCatigoryBtnList.addEventListener('click', function() {
+    elCatigoryBtnGrid.classList.remove('catigory__btn--active');
+    elCatigoryBtnList.classList.add('catigory__btn--active');
+    elCatigory.classList.remove('catigory__product-grid-stile');
+  });
+};
+
+
 //MODAL SEARCH
 
 var elHeaderMainMobileSearch = document.querySelector(".header-main__mobile-search");
@@ -18,6 +41,26 @@ if (elHeaderMainForm) {
     }
   });
 }
+
+// MODAL SHOPPING
+
+var elShopping = document.querySelector('.shopping');
+var elHeaderMainCart = document.querySelector('.header-main__cart');
+var elShoppingHeaderClose = document.querySelector('.shopping__header-close');
+if (elHeaderMainCart) {
+  elHeaderMainCart.addEventListener('click', function (evt) {
+    evt.preventDefault();
+
+    elShopping.classList.add('shopping--open');
+  });
+}
+
+if (elShoppingHeaderClose) {
+  elShoppingHeaderClose.addEventListener('click', function () {
+    elShopping.classList.remove('shopping--open');
+  });
+}
+
 
 // MENU GAMBURGER
 
@@ -41,29 +84,6 @@ elsCatigoryCheckBtn.forEach(function (list) {
     list.closest("p").remove(".catigory__checked");
   });  
 });
-
-
-// GRID AND LIST
-
-var elCatigory = document.querySelector(".catigory");
-var elCatigoryBtnGrid = document.querySelector(".catigory__btn-grid");
-var elCatigoryBtnList = document.querySelector(".catigory__btn-list");
-
-if (elCatigoryBtnGrid) {
-  elCatigoryBtnGrid.addEventListener('click', function() {
-    elCatigory.classList.add('catigory__product-grid-stile');
-    elCatigoryBtnGrid.classList.add('catigory__btn--active');
-    elCatigoryBtnList.classList.remove('catigory__btn--active');
-  });
-};
-
-if (elCatigoryBtnList) {
-  elCatigoryBtnList.addEventListener('click', function() {
-    elCatigory.classList.remove('catigory__product-grid-stile');
-    elCatigoryBtnGrid.classList.remove('catigory__btn--active');
-    elCatigoryBtnList.classList.add('catigory__btn--active');
-  });
-};
 
 
 var elCatigoryProductMobileBtn = document.querySelector('.catigory__product-mobile-btn');

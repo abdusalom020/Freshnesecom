@@ -1,5 +1,7 @@
 @include breakpoint-down (800px) {
   .site-header{
+    position: relative;
+    z-index: 10;
     display: flex;
     align-items: center;
     

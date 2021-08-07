@@ -16,6 +16,7 @@
   margin-right: 31px;
   width: calc(100% - 63% + 31px);
   flex-shrink: 0;
+  object-fit: cover;
 }
 
 .blog__card {
@@ -63,6 +64,7 @@
     background-position: center;
     background-size: cover;
     margin-right: 8px;
+    object-fit: cover;
   }
 }
 
@@ -111,6 +113,7 @@
     background-position: center;
     background-size: cover;
     margin-bottom: 24px;
+    object-fit: cover;
   }
 }
 
@@ -194,6 +197,7 @@
     background-size: cover;
     margin-left: 48px;
     flex-shrink: 0;
+    object-fit: cover;
   }
 }
 
