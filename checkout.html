@@ -1,0 +1,629 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Freshnesecom</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/main.min.css">
+</head>
+
+<body>
+  <div class="container">
+    <header class="site-header">
+      <h1 class="visually-hidden">Header</h1>
+      <nav class="site-header__nav nav">
+        <div class="nav__box w-100">
+          <ul class="nav__contact-list ">
+            <li class="nav__contact-item">
+              <a href="#" class="nav__contact-link nav__contact-link--active">Chat with us</a>
+            </li>
+            <li class="nav__contact-item">
+              <a href="tel:420336775664" class="nav__contact-link">+420 336 775 664</a>
+            </li>
+            <li class="nav__contact-item">
+              <a href="mailto:info@freshnesecom.com" class="nav__contact-link">info@freshnesecom.com</a>
+            </li>
+          </ul>
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a href="#" class="nav__link">Blog</a>
+            </li>
+            <li class="nav__item">
+              <a href="#" class="nav__link">About Us</a>
+            </li>
+            <li class="nav__item">
+              <a href="#" class="nav__link">Careers</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+      <section class="site-header__main header-main shopping">
+        <h2 class="visually-hidden">Site header main</h2>
+        <a class="header-main__logo-link" href="index.html"><img class="header-main__logo-img" src="img/logo.svg" alt="logo"
+            width="177" height="18"></a>
+        <button class="header-main__mobile-search" type="button"></button>
+        <div class="header-main__modal">
+          <form class="header-main__form" action="https://echo.htmlacademy.ru" method="GET">
+            <select class="header-main__select" name="select" style="-webkit-appearance: none;">
+              <option value="All">All categories</option>
+              <option value="Bakery">Bakery</option>
+              <option value="Fruit and vegetables">Fruit and vegetables</option>
+              <option value="Meat and fish">Meat and fish</option>
+              <option value="Drinks">Drinks</option>
+              <option value="Kitchen">Kitchen</option>
+              <option value="selSpecialect">Special nutrition</option>
+              <option value="Baby">Baby</option>
+              <option value="Pharmacy">Pharmacy</option>
+            </select>
+            <input class="header-main__field" type="search" name="search" placeholder="Search Products, categories ..."
+              required>
+            <button class="header-main__search" type="submit"></button>
+          </form>
+        </div>
+        <a class="header-main__account" href="#">
+          <svg class="header-main__account-svg" width="22" height="24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M2 22l.79-2.88c2.61-9.5 13.81-9.5 16.42 0L20 22" stroke-width="2.5" stroke-linecap="round"
+              stroke-linejoin="round" />
+            <path d="M11 11.98a5 5 0 100-10 5 5 0 000 10z" stroke-width="2.5" stroke-linecap="round"
+              stroke-linejoin="bevel" />
+          </svg>
+        </a>
+        <a class="header-main__cart" href="#">
+          <svg class="header-main__cart-svg" width="24" height="22" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M17.89 19.85H6.11a1.42 1.42 0 01-1.38-1.08L2.08 8.16a.7.7 0 01.68-.87h18.48a.7.7 0 01.68.87l-2.65 10.61a1.42 1.42 0 01-1.38 1.08v0zM9.8 2.15L6.9 7.29M13.88 2.15l2.91 5.14"
+              stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" />
+          </svg>
+          <span class="header-main__cart-number">4</span>
+        </a>
+        <div class="shopping__cart">
+          <div class="shopping__header">
+            <h3 class="shopping__header-heading">Shopping cart</h3>
+            <button class="shopping__header-close" type="button"></button>
+          </div>
+          <ul class="shopping__list">
+            <li class="shopping__item catigory">
+              <div class="shopping__cart-left">
+                <img class="shopping__cart-left-img" src="https://via.placeholder.com/268x280?text=PRODUCT" width="100" height="67" alt="cart img">
+                <ul class="shopping__cart-left-list">
+                  <li class="shopping__cart-left-item">
+                    <button class="shopping__cart-left-button shopping__cart-left-wish ">Wishlist</button>
+                  </li>
+                  <li class="shopping__cart-left-item">
+                    <button class="shopping__cart-left-button shopping__cart-left-compare">Compare</button>
+                  </li>
+                  <li class="shopping__cart-left-item">
+                    <button class="shopping__cart-left-button shopping__cart-left-remove">Remove</button>
+                  </li>
+                </ul>
+              </div>
+              <div class="shopping__cart-right">
+                <h4 class="shopping__cart-right-heading">Product-title</h4>
+                <table>
+                  <tr class="shopping__cart-right-tr">
+                    <th class="shopping__cart-right-th">Farm:</th>
+                    <td class="shopping__cart-right-td">Tharamis Farm</td>
+                  </tr>
+                  <tr class="shopping__cart-right-tr">
+                    <td class="shopping__cart-right-th">Freshness:</td>
+                    <td class="shopping__cart-right-td">1 day old</td>
+                  </tr>
+                </table>
+                <div class="catigory__product-stars">
+                  <img class="catigory__product-empty" src="img/empty.png" alt="stars" width="89" height="16">
+                  <div class="catigory__product-full-box">
+                    <img class="catigory__product-full" src="img/star-full.png" alt="" width="17" height="16">
+                    <img class="catigory__product-full" src="img/star-full.png" alt="" width="17" height="16">
+                    <img class="catigory__product-full" src="img/star-full.png" alt="" width="17" height="16">
+                    <img class="catigory__product-full" src="img/star-full.png" alt="" width="17" height="16">
+                    <img class="catigory__product-full" src="img/star-full.png" alt="" width="17" height="16">
+                  </div>
+                </div>
+                <div class="shopping__cart-right-money">
+                  <p class="shopping__cart-right-price">36.99 USD <span class="shopping__cart-right-sale">48.56 USD</span></p>
+                  <button class="shopping__cart-right-btn"><span class="shopping__cart-right-pcs">1 pcs</span>Pcs</button>
+                </div>
+              </div>
+            </li>
+            <li class="shopping__item catigory">
+              <div class="shopping__cart-left">
+                <img class="shopping__cart-left-img" src="https://via.placeholder.com/268x280?text=PRODUCT" width="100" height="67" alt="cart img">
+                <ul class="shopping__cart-left-list">
+                  <li class="shopping__cart-left-item">
+                    <button class="shopping__cart-left-button shopping__cart-left-wish">Wishlist</button>
+                  </li>
+                  <li class="shopping__cart-left-item">
+                    <button class="shopping__cart-left-button shopping__cart-left-compare">Compare</button>
+                  </li>
+                  <li class="shopping__cart-left-item">
+                    <button class="shopping__cart-left-button shopping__cart-left-remove">Remove</button>
+                  </li>
+                </ul>
+              </div>
+              <div class="shopping__cart-right">
+                <h4 class="shopping__cart-right-heading">Product-title</h4>
+                <table>
+                  <tr class="shopping__cart-right-tr">
+                    <th class="shopping__cart-right-th">Farm:</th>
+                    <td class="shopping__cart-right-td">Tharamis Farm</td>
+                  </tr>
+                  <tr class="shopping__cart-right-tr">
+                    <td class="shopping__cart-right-th">Freshness:</td>
+                    <td class="shopping__cart-right-td">1 day old</td>
+                  </tr>
+                </table>
+                <div class="catigory__product-stars">
+                  <img class="catigory__product-empty" src="img/empty.png" alt="stars" width="89" height="16">
+                  <div class="catigory__product-full-box">
+                    <img class="catigory__product-full" src="img/star-full.png" alt="" width="17" height="16">
+                    <img class="catigory__product-full" src="img/star-full.png" alt="" width="17" height="16">
+                    <img class="catigory__product-full" src="img/star-full.png" alt="" width="17" height="16">
+                    <img class="catigory__product-full" src="img/star-full.png" alt="" width="17" height="16">
+                    <img class="catigory__product-full" src="img/star-full.png" alt="" width="17" height="16">
+                  </div>
+                </div>
+                <div class="shopping__cart-right-money">
+                  <p class="shopping__cart-right-price">36.99 USD <span class="shopping__cart-right-sale">48.56 USD</span></p>
+                  <button class="shopping__cart-right-btn"><span class="shopping__cart-right-pcs">1 pcs</span>Pcs</button>
+                </div>
+              </div>
+            </li>
+          </ul>
+          <div class="shopping__footer">
+            <span class="shopping__footer-info">Subtotal</span>
+            <p class="shopping__footer-allprice">73.98 USD</p>
+            <div class="shopping__footer-box">
+              <p class="shopping__footer-text">Continue shopping</p>
+              <a class="shopping__footer-link" href="#">Go to Checkout</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="site-header__menu header-menu">
+        <h2 class="visually-hidden">site header menu</h2>
+        <button class="header-menu__link" type="button">
+          <svg class="header-menu__svg" width="24" height="20">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M0 0h24v2H0V0zm0 8h24v2H0V8zm24 8H0v2h24v-2z"
+              fill="151515" />
+          </svg>
+        </button>
+        <div class="header-menu__box">
+          <ul class="header-menu__list">
+            <li class="header-menu__item menu-dropdown">
+              <a class="menu-dropdown__active" href="#">Bakery</a>
+              <ul class="menu-dropdown__list">
+                <li class="menu-dropdown__item">
+                  <a class="menu-dropdown__link" href="#">one</a>
+                </li>
+                <li class="menu-dropdown__item">
+                  <a class="menu-dropdown__link" href="#">two</a>
+                </li>
+                <li class="menu-dropdown__item">
+                  <a class="menu-dropdown__link" href="#">three</a>
+                </li>
+              </ul>
+            </li>
+            <li class="header-menu__item menu-dropdown">
+              <a class="menu-dropdown__active" href="#">Fruit and vegetables</a>
+              <ul class="menu-dropdown__list">
+                <li class="menu-dropdown__item">
+                  <a class="menu-dropdown__link" href="#">one</a>
+                </li>
+                <li class="menu-dropdown__item">
+                  <a class="menu-dropdown__link" href="#">two</a>
+                </li>
+                <li class="menu-dropdown__item">
+                  <a class="menu-dropdown__link" href="#">three</a>
+                </li>
+              </ul>
+            </li>
+            <li class="header-menu__item menu-dropdown">
+              <a class="menu-dropdown__active" href="#">Meat and fish</a>
+              <ul class="menu-dropdown__list">
+                <li class="menu-dropdown__item">
+                  <a class="menu-dropdown__link" href="#">one</a>
+                </li>
+                <li class="menu-dropdown__item">
+                  <a class="menu-dropdown__link" href="#">two</a>
+                </li>
+                <li class="menu-dropdown__item">
+                  <a class="menu-dropdown__link" href="#">three</a>
+                </li>
+              </ul>
+            </li>
+            <li class="header-menu__item menu-dropdown">
+              <a class="menu-dropdown__active" href="#">Drinks</a>
+              <ul class="menu-dropdown__list">
+                <li class="menu-dropdown__item">
+                  <a class="menu-dropdown__link" href="#">one</a>
+                </li>
+                <li class="menu-dropdown__item">
+                  <a class="menu-dropdown__link" href="#">two</a>
+                </li>
+                <li class="menu-dropdown__item">
+                  <a class="menu-dropdown__link" href="#">three</a>
+                </li>
+              </ul>
+            </li>
+            <li class="header-menu__item menu-dropdown">
+              <a class="menu-dropdown__active" href="#">Kitchen</a>
+              <ul class="menu-dropdown__list">
+                <li class="menu-dropdown__item">
+                  <a class="menu-dropdown__link" href="#">one</a>
+                </li>
+                <li class="menu-dropdown__item">
+                  <a class="menu-dropdown__link" href="#">two</a>
+                </li>
+                <li class="menu-dropdown__item">
+                  <a class="menu-dropdown__link" href="#">three</a>
+                </li>
+              </ul>
+            </li>
+            <li class="header-menu__item menu-dropdown">
+              <a class="menu-dropdown__active" href="#">Special nutrition</a>
+              <ul class="menu-dropdown__list">
+                <li class="menu-dropdown__item">
+                  <a class="menu-dropdown__link" href="#">one</a>
+                </li>
+                <li class="menu-dropdown__item">
+                  <a class="menu-dropdown__link" href="#">two</a>
+                </li>
+                <li class="menu-dropdown__item">
+                  <a class="menu-dropdown__link" href="#">three</a>
+                </li>
+              </ul>
+            </li>
+            <li class="header-menu__item menu-dropdown">
+              <a class="menu-dropdown__active" href="#">Baby</a>
+              <ul class="menu-dropdown__list">
+                <li class="menu-dropdown__item">
+                  <a class="menu-dropdown__link" href="#">one</a>
+                </li>
+                <li class="menu-dropdown__item">
+                  <a class="menu-dropdown__link" href="#">two</a>
+                </li>
+                <li class="menu-dropdown__item">
+                  <a class="menu-dropdown__link" href="#">three</a>
+                </li>
+              </ul>
+            </li>
+            <li class="header-menu__item menu-dropdown">
+              <a class="menu-dropdown__active" href="#">Pharmacy</a>
+              <ul class="menu-dropdown__list">
+                <li class="menu-dropdown__item">
+                  <a class="menu-dropdown__link" href="#">one</a>
+                </li>
+                <li class="menu-dropdown__item">
+                  <a class="menu-dropdown__link" href="#">two</a>
+                </li>
+                <li class="menu-dropdown__item">
+                  <a class="menu-dropdown__link" href="#">three</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </header>
+
+    <main class="site-main pb-5">
+      <h1 class="sr-only">Catigory</h1>
+      <section class="py-3 overflow-auto">
+        <ul class="list-unstyled d-flex align-items-center mb-0 text-secondary">
+          <li class="mr-2 flex-nowrap">
+            <a class="text-decoration-none text-secondary flex-nowrap" href="index.html">Homepage</a>
+          </li>
+          /
+          <li class="mr-2 ml-2 flex-nowrap">
+            <a class="text-decoration-none text-dark flex-nowrap" href="category.html">Checkout page</a>
+          </li>
+        </ul>
+      </section>
+
+      <form class="row flex-column flex-lg-row" action="https://echo.htmlacademy.ru" method="GET">
+        <h2 class="sr-only">Checkout page</h2>
+        <div class="col-lg-7">
+          <div class="">
+            
+            <h3 class="h4 mb-1">Billing info</h3>
+            <div class="d-flex align-items-center justify-content-between text-secondary mb-3">
+              <span>Please enter your billing info</span>
+              <span>Step 1 od 5</span>
+            </div>
+            <div class="row flex-column flex-sm-row">
+              <div class="col-sm-6">
+                <label class="w-100">
+                  Firs name
+                  <input class="w-100 form-control bg-light" type="text" name="first-name" placeholder="Firs name" required>
+                </label>
+                <label class="w-100">
+                  Email address
+                  <input class="w-100 form-control bg-light" type="email" name="email-address" placeholder="Email address" required>
+                </label>
+                <label class="w-100">
+                  Address
+                  <input class="w-100 form-control bg-light" class="form-control" type="text" name="address" placeholder="Address" required>
+                </label>
+                <label class="w-100">
+                  State / Country
+                  <select class="w-100 form-control bg-light" name="state">
+                    <option value="select" selected disabled>Choose a state or country</option>
+                    <option value="uzb">Uzbekistan</option>
+                    <option value="usa">USA</option>
+                    <option value="africa">Africa</option>
+                  </select>
+                </label>
+              </div>
+              <div class="col-sm-6">
+                <label class="w-100">
+                  Last name
+                  <input class="w-100 form-control bg-light" type="text" name="last-name" placeholder="Last name" required>
+                </label>
+                <label class="w-100">
+                  Phone number
+                  <input class="w-100 form-control bg-light" type="tel" name="phone-number" placeholder="Phone number" required>
+                </label>
+                <label class="w-100">
+                  Town / City
+                  <input class="w-100 form-control bg-light" type="text" name="towncity" placeholder="Town or city" required>
+                </label>
+                <label class="w-100">
+                  ZIP/Postal code
+                  <input class="w-100 form-control bg-light" type="text" name="postal-code" placeholder="Postal code or ZIP" required>
+                </label>
+              </div>
+            </div>
+            <label class="d-flex align-items-center form-control bg-light col-sm-5 mt-3 mb-5">
+              <input class="mr-2" type="checkbox" name="different-address" aria-label="different address">
+              Ship to a different address?
+            </label>
+
+            <h3 class="mb-1">Billing method</h3>
+            <div class="d-flex align-items-center justify-content-between text-secondary mb-3">
+              <span>Please enter your payment method</span>
+              <span>Step 2 of 5</span>
+            </div>
+            <div class="">
+              <div class="form-control d-flex justify-content-between bg-light mb-2">
+                <label class="d-flex align-items-center m-0">
+                  <input class="mr-sm-3" type="radio" name="fedex" aria-label="fedex price">
+                  <span class="d-none d-sm-block">FedEx</span>
+                </label>
+                <p>
+                  <span class="text-success mr-sm-3">+32 USD</span>
+                  Additional price
+                </p>
+                <img src="img/fedex.png" alt="fedex" width="54" height="16">
+              </div>
+              <div class="form-control d-flex justify-content-between bg-light mb-5">
+                <label class="d-flex align-items-center m-0">
+                  <input class="mr-sm-3" type="radio" name="dhl" aria-label="dhl price">
+                  <span class="d-none d-sm-block">DHL</span>
+                </label>
+                <p>
+                  <span class="text-success mr-sm-3">+15 USD</span>
+                  Additional price
+                </p>
+                <img src="img/dhl.png" alt="dhl" width="85" height="14">
+              </div>
+            </div>
+            
+            <h3 class="mb-1">Payment method</h3>
+            <div class="d-flex align-items-center justify-content-between text-secondary mb-3">
+              <span>Please enter your payment method</span>
+              <span>Step 3 of 5</span>
+            </div>
+            <div class="p-3 rounded-lg shadow-sm mb-3">
+              <div class="d-flex align-items-center justify-content-between mb-4">
+                <div class="d-flex align-items-center">
+                  <img class="mr-3" src="img/oval-green.svg" alt="oval chacked" width="20" height="20">
+                  <span>Credit card</span>
+                </div>
+                <img src="img/visa.png" alt="visa card" width="94" height="20">
+              </div>
+              <div class="form-group">
+                <label class="w-100">
+                  Card number
+                  <input type="number" class="form-control bg-light" min="1000000000000000" placeholder="Card number">
+              </label>
+              </div>
+              <div class="form-row">
+                <div class="form-group col-md-6 mb-0">
+                  <label class="w-100 m-0">
+                    Card holder
+                    <input type="text" class="form-control w-100 bg-light" placeholder="Card holder">
+                  </label>
+                </div>
+                <div class="form-group col-md-4 mb-0">
+                  <label class="m-0 w-100">
+                    Expiration date
+                    <input class="form-control bg-light w-100" type="datetime" name="date" placeholder="DD/MM/YY">
+                  </label>
+                </div>
+                <div class="form-group col-md-2 mb-0">
+                  <label class="w-100 m-0">
+                    CVC
+                    <input type="text" class="form-control bg-light" placeholder="CVC">
+                  </label>
+                </div>
+              </div>
+            </div>
+            <div class="mb-5">
+              <div class="form-control d-flex justify-content-between bg-light mb-2">
+                <label>
+                  <input class="mr-3" type="radio" name="paypal" aria-label="paypal">
+                  <span>PayPal</span>
+                </label>
+                <img src="img/payapi.png" alt="paypal" width="76" height="19">
+              </div>
+              <div class="form-control d-flex justify-content-between bg-light">
+                <label>
+                  <input class="mr-3" type="radio" name="bitcoin" aria-label="bitcoin">
+                  <span>Bitcoin</span>
+                </label>
+                <img src="img/bitcoin.png" alt="bitcoin" width="75" height="16">
+              </div>
+            </div>
+
+            <h3 class="mb-1">Additional informations</h3>
+            <div class="d-flex align-items-center justify-content-between text-secondary mb-3">
+              <span>Need something else? We will make it for you!</span>
+              <span>Step 4 of 5</span>
+            </div>
+            <label class="d-flex flex-column w-100 mb-5">
+              Order notes
+              <textarea class="w-auto bg-light form-control" name="notes" placeholder="Need a specific delivery day? Sending a gitf? Let’s say ..."></textarea>
+            </label>
+
+            <h3 class="mb-1">Confirmation</h3>
+            <div class="d-flex align-items-center justify-content-between text-secondary mb-3">
+              <span>We are getting to the end. Just few clicks and your order si ready!</span>
+              <span>Step 5 of 5</span>
+            </div>
+            <div class="">
+              <label class="d-flex align-items-center p-2 rounded-lg shadow-sm bg-light w-100 mb-3">
+                <input class="mr-3" type="checkbox" name="promisid">
+                <span>I agree with sending an Marketing and newsletter emails.</span>
+              </label>
+              <label class="d-flex align-items-center p-2 rounded-lg shadow-sm bg-light w-100 mb-4">
+                <input class="mr-3" type="checkbox" name="policy">
+                <span>I agree with our <u>terms and conditions</u> and <u>privacy policy</u>.</span>
+              </label>
+            </div>
+            <button class="btn btn-sm d-inline-flex bg-success text-white p-2 rounded-lg mb-4" type="submit">Complete order</button>
+
+            <div class="w-50">
+              <img class="mb-2" src="img/safe.png" alt="safe" width="27" height="28">
+              <h4 class="h5">All your date are safe</h4>
+              <p class="text-secondary">We are using the most advanced security to provide you the best experience ever.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-5">
+          <div class="rounded-lg shadow-sm p-3">
+            <h3 class="mb-1 h4">Order Summary</h3>
+            <p class="text-secondary mb-3">Price can change depending on shipping method and taxes of your state.</p>
+            <ul class="shopping__list">
+              <li class="shopping__item catigory">
+                <div class="shopping__cart-left">
+                  <img class="shopping__cart-left-img" src="https://via.placeholder.com/268x280?text=PRODUCT" width="100" height="80" alt="cart img">
+                  <ul class="shopping__cart-left-list">
+                    <li class="shopping__cart-left-item">
+                      <button class="shopping__cart-left-button shopping__cart-left-wish ">Wishlist</button>
+                    </li>
+                    <li class="shopping__cart-left-item">
+                      <button class="shopping__cart-left-button shopping__cart-left-compare">Compare</button>
+                    </li>
+                    <li class="shopping__cart-left-item">
+                      <button class="shopping__cart-left-button shopping__cart-left-remove">Remove</button>
+                    </li>
+                  </ul>
+                </div>
+                <div class="shopping__cart-right">
+                  <h4 class="shopping__cart-right-heading">Product-title</h4>
+                  <table>
+                    <tr class="shopping__cart-right-tr">
+                      <th class="shopping__cart-right-th">Farm:</th>
+                      <td class="shopping__cart-right-td">Tharamis Farm</td>
+                    </tr>
+                    <tr class="shopping__cart-right-tr">
+                      <td class="shopping__cart-right-th">Freshness:</td>
+                      <td class="shopping__cart-right-td">1 day old</td>
+                    </tr>
+                  </table>
+                  <div class="catigory__product-stars">
+                    <img src="img/stars-for.png" alt="stars">
+                  </div>
+                  <div class="shopping__cart-right-money">
+                    <p class="shopping__cart-right-price">36.99 USD <span class="shopping__cart-right-sale">48.56 USD</span></p>
+                    <button class="shopping__cart-right-btn"><span class="shopping__cart-right-pcs">1 pcs</span>Pcs</button>
+                  </div>
+                </div>
+              </li>
+              <li class="shopping__item catigory">
+                <div class="shopping__cart-left">
+                  <img class="shopping__cart-left-img" src="https://via.placeholder.com/268x280?text=PRODUCT" width="100" height="67" alt="cart img">
+                  <ul class="shopping__cart-left-list">
+                    <li class="shopping__cart-left-item">
+                      <button class="shopping__cart-left-button shopping__cart-left-wish">Wishlist</button>
+                    </li>
+                    <li class="shopping__cart-left-item">
+                      <button class="shopping__cart-left-button shopping__cart-left-compare">Compare</button>
+                    </li>
+                    <li class="shopping__cart-left-item">
+                      <button class="shopping__cart-left-button shopping__cart-left-remove">Remove</button>
+                    </li>
+                  </ul>
+                </div>
+                <div class="shopping__cart-right">
+                  <h4 class="shopping__cart-right-heading">Product-title</h4>
+                  <table>
+                    <tr class="shopping__cart-right-tr">
+                      <th class="shopping__cart-right-th">Farm:</th>
+                      <td class="shopping__cart-right-td">Tharamis Farm</td>
+                    </tr>
+                    <tr class="shopping__cart-right-tr">
+                      <td class="shopping__cart-right-th">Freshness:</td>
+                      <td class="shopping__cart-right-td">1 day old</td>
+                    </tr>
+                  </table>
+                  <div class="catigory__product-stars">
+                    <img src="img/stars-for.png" alt="stars">
+                  </div>
+                  <div class="shopping__cart-right-money">
+                    <p class="shopping__cart-right-price">36.99 USD <span class="shopping__cart-right-sale">48.56 USD</span></p>
+                    <button class="shopping__cart-right-btn"><span class="shopping__cart-right-pcs">1 pcs</span>Pcs</button>
+                  </div>
+                </div>
+              </li>
+            </ul>
+            <ul class="d-flex justify-content-between list-unstyled mb-5">
+              <li class="d-flex flex-column">
+                <span class="font-weight-bold mb-2">Subtotal</span>
+                <span class="font-weight-bold mb-2">Tax</span>
+                <span class="font-weight-bold">Shipping</span>
+              </li>
+              <li class="d-flex flex-column text-right">
+                <span class="mb-2">73.98 USD</span>
+                <span class="mb-2">17%16.53 USD</span>
+                <span class="">0 USD</span>
+              </li>
+            </ul>
+            <label class="d-flex align-items-center justify-content-between p-2 rounded-lg shadow-sm bg-light mb-5">
+              <input class="border-0 bg-transparent w-75" type="text" name="promo" placeholder="Apply promo code">
+              <button class="btn">Apply</button>
+            </label>
+            <div class="d-flex align-items-center justify-content-between">
+              <p class="d-flex flex-column">
+                Total Order
+                <span class="text-success">Guaranteed delivery day:  June 12, 2020</span>
+              </p>
+              <span class="h3 text-success">89.84 USD</span>
+            </div>
+          </div>
+        </div>
+      </form>
+    </main>
+  </div>
+
+  <footer class="">
+    <h1 class="visually-hidden">Footer</h1>
+    <div class="container bg-light pt-5 pb-5">
+      <span class="bg-transparent">
+        Copyright © 2020 petrbilek.com
+      </span>
+    </div>
+  </footer>
+  
+
+  <script src="js/jquery-3.6.0.min.js"></script>
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>
