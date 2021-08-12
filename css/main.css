@@ -3231,6 +3231,7 @@ table {
 }
 
 .catigory__btn {
+  text-decoration: none;
   border: none;
   background-color: transparent;
   font-family: "Open Sans", "Arial", serif;

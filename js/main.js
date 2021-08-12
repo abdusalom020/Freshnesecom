@@ -111,6 +111,6 @@ elsShoppingCartWish.forEach(function (w) {
 
 elsShoppingCartClose.forEach(function (c) {
   c.addEventListener('click', function () {
-    c.closest("li").parentElement.parentElement.parentElement.remove();
+    c.closest(".shopping__item").remove();
   });
 });  

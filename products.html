@@ -1,0 +1,782 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Freshnesecom</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/main.min.css">
+</head>
+
+<body>
+  <div class="container">
+    <header class="site-header">
+      <h1 class="visually-hidden">Header</h1>
+      <nav class="site-header__nav nav">
+        <div class="nav__box w-100">
+          <ul class="nav__contact-list ">
+            <li class="nav__contact-item">
+              <a href="#" class="nav__contact-link nav__contact-link--active">Chat with us</a>
+            </li>
+            <li class="nav__contact-item">
+              <a href="tel:420336775664" class="nav__contact-link">+420 336 775 664</a>
+            </li>
+            <li class="nav__contact-item">
+              <a href="mailto:info@freshnesecom.com" class="nav__contact-link">info@freshnesecom.com</a>
+            </li>
+          </ul>
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a href="#" class="nav__link">Blog</a>
+            </li>
+            <li class="nav__item">
+              <a href="#" class="nav__link">About Us</a>
+            </li>
+            <li class="nav__item">
+              <a href="#" class="nav__link">Careers</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+      <section class="site-header__main header-main shopping">
+        <h2 class="visually-hidden">Site header main</h2>
+        <a class="header-main__logo-link" href="index.html"><img class="header-main__logo-img" src="img/logo.svg" alt="logo"
+            width="177" height="18"></a>
+        <button class="header-main__mobile-search" type="button"></button>
+        <div class="header-main__modal">
+          <form class="header-main__form" action="https://echo.htmlacademy.ru" method="GET">
+            <select class="header-main__select" name="select" style="-webkit-appearance: none;">
+              <option value="All">All categories</option>
+              <option value="Bakery">Bakery</option>
+              <option value="Fruit and vegetables">Fruit and vegetables</option>
+              <option value="Meat and fish">Meat and fish</option>
+              <option value="Drinks">Drinks</option>
+              <option value="Kitchen">Kitchen</option>
+              <option value="selSpecialect">Special nutrition</option>
+              <option value="Baby">Baby</option>
+              <option value="Pharmacy">Pharmacy</option>
+            </select>
+            <input class="header-main__field" type="search" name="search" placeholder="Search Products, categories ..."
+              required>
+            <button class="header-main__search" type="submit"></button>
+          </form>
+        </div>
+        <a class="header-main__account" href="#">
+          <svg class="header-main__account-svg" width="22" height="24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M2 22l.79-2.88c2.61-9.5 13.81-9.5 16.42 0L20 22" stroke-width="2.5" stroke-linecap="round"
+              stroke-linejoin="round" />
+            <path d="M11 11.98a5 5 0 100-10 5 5 0 000 10z" stroke-width="2.5" stroke-linecap="round"
+              stroke-linejoin="bevel" />
+          </svg>
+        </a>
+        <a class="header-main__cart" href="#">
+          <svg class="header-main__cart-svg" width="24" height="22" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M17.89 19.85H6.11a1.42 1.42 0 01-1.38-1.08L2.08 8.16a.7.7 0 01.68-.87h18.48a.7.7 0 01.68.87l-2.65 10.61a1.42 1.42 0 01-1.38 1.08v0zM9.8 2.15L6.9 7.29M13.88 2.15l2.91 5.14"
+              stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" />
+          </svg>
+          <span class="header-main__cart-number">4</span>
+        </a>
+        <div class="shopping__cart">
+          <div class="shopping__header">
+            <h3 class="shopping__header-heading">Shopping cart</h3>
+            <button class="shopping__header-close" type="button"></button>
+          </div>
+          <ul class="shopping__list">
+            <li class="shopping__item catigory">
+              <div class="shopping__cart-left">
+                <img class="shopping__cart-left-img" src="https://via.placeholder.com/268x280?text=PRODUCT" width="100" height="67" alt="cart img">
+                <ul class="shopping__cart-left-list">
+                  <li class="shopping__cart-left-item">
+                    <button class="shopping__cart-left-button shopping__cart-left-wish ">Wishlist</button>
+                  </li>
+                  <li class="shopping__cart-left-item">
+                    <button class="shopping__cart-left-button shopping__cart-left-compare">Compare</button>
+                  </li>
+                  <li class="shopping__cart-left-item">
+                    <button class="shopping__cart-left-button shopping__cart-left-remove">Remove</button>
+                  </li>
+                </ul>
+              </div>
+              <div class="shopping__cart-right">
+                <h4 class="shopping__cart-right-heading">Product-title</h4>
+                <table>
+                  <tr class="shopping__cart-right-tr">
+                    <th class="shopping__cart-right-th">Farm:</th>
+                    <td class="shopping__cart-right-td">Tharamis Farm</td>
+                  </tr>
+                  <tr class="shopping__cart-right-tr">
+                    <td class="shopping__cart-right-th">Freshness:</td>
+                    <td class="shopping__cart-right-td">1 day old</td>
+                  </tr>
+                </table>
+                <div class="catigory__product-stars">
+                  <img class="catigory__product-empty" src="img/empty.png" alt="stars" width="89" height="16">
+                  <div class="catigory__product-full-box">
+                    <img class="catigory__product-full" src="img/star-full.png" alt="" width="17" height="16">
+                    <img class="catigory__product-full" src="img/star-full.png" alt="" width="17" height="16">
+                    <img class="catigory__product-full" src="img/star-full.png" alt="" width="17" height="16">
+                    <img class="catigory__product-full" src="img/star-full.png" alt="" width="17" height="16">
+                    <img class="catigory__product-full" src="img/star-full.png" alt="" width="17" height="16">
+                  </div>
+                </div>
+                <div class="shopping__cart-right-money">
+                  <p class="shopping__cart-right-price">36.99 USD <span class="shopping__cart-right-sale">48.56 USD</span></p>
+                  <button class="shopping__cart-right-btn"><span class="shopping__cart-right-pcs">1 pcs</span>Pcs</button>
+                </div>
+              </div>
+            </li>
+            <li class="shopping__item catigory">
+              <div class="shopping__cart-left">
+                <img class="shopping__cart-left-img" src="https://via.placeholder.com/268x280?text=PRODUCT" width="100" height="67" alt="cart img">
+                <ul class="shopping__cart-left-list">
+                  <li class="shopping__cart-left-item">
+                    <button class="shopping__cart-left-button shopping__cart-left-wish">Wishlist</button>
+                  </li>
+                  <li class="shopping__cart-left-item">
+                    <button class="shopping__cart-left-button shopping__cart-left-compare">Compare</button>
+                  </li>
+                  <li class="shopping__cart-left-item">
+                    <button class="shopping__cart-left-button shopping__cart-left-remove">Remove</button>
+                  </li>
+                </ul>
+              </div>
+              <div class="shopping__cart-right">
+                <h4 class="shopping__cart-right-heading">Product-title</h4>
+                <table>
+                  <tr class="shopping__cart-right-tr">
+                    <th class="shopping__cart-right-th">Farm:</th>
+                    <td class="shopping__cart-right-td">Tharamis Farm</td>
+                  </tr>
+                  <tr class="shopping__cart-right-tr">
+                    <td class="shopping__cart-right-th">Freshness:</td>
+                    <td class="shopping__cart-right-td">1 day old</td>
+                  </tr>
+                </table>
+                <div class="catigory__product-stars">
+                  <img class="catigory__product-empty" src="img/empty.png" alt="stars" width="89" height="16">
+                  <div class="catigory__product-full-box">
+                    <img class="catigory__product-full" src="img/star-full.png" alt="" width="17" height="16">
+                    <img class="catigory__product-full" src="img/star-full.png" alt="" width="17" height="16">
+                    <img class="catigory__product-full" src="img/star-full.png" alt="" width="17" height="16">
+                    <img class="catigory__product-full" src="img/star-full.png" alt="" width="17" height="16">
+                    <img class="catigory__product-full" src="img/star-full.png" alt="" width="17" height="16">
+                  </div>
+                </div>
+                <div class="shopping__cart-right-money">
+                  <p class="shopping__cart-right-price">36.99 USD <span class="shopping__cart-right-sale">48.56 USD</span></p>
+                  <button class="shopping__cart-right-btn"><span class="shopping__cart-right-pcs">1 pcs</span>Pcs</button>
+                </div>
+              </div>
+            </li>
+          </ul>
+          <div class="shopping__footer">
+            <span class="shopping__footer-info">Subtotal</span>
+            <p class="shopping__footer-allprice">73.98 USD</p>
+            <div class="shopping__footer-box">
+              <p class="shopping__footer-text">Continue shopping</p>
+              <a class="shopping__footer-link" href="#">Go to Checkout</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="site-header__menu header-menu">
+        <h2 class="visually-hidden">site header menu</h2>
+        <button class="header-menu__link" type="button">
+          <svg class="header-menu__svg" width="24" height="20">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M0 0h24v2H0V0zm0 8h24v2H0V8zm24 8H0v2h24v-2z"
+              fill="151515" />
+          </svg>
+        </button>
+        <div class="header-menu__box">
+          <ul class="header-menu__list">
+            <li class="header-menu__item menu-dropdown">
+              <a class="menu-dropdown__active" href="#">Bakery</a>
+              <ul class="menu-dropdown__list">
+                <li class="menu-dropdown__item">
+                  <a class="menu-dropdown__link" href="#">one</a>
+                </li>
+                <li class="menu-dropdown__item">
+                  <a class="menu-dropdown__link" href="#">two</a>
+                </li>
+                <li class="menu-dropdown__item">
+                  <a class="menu-dropdown__link" href="#">three</a>
+                </li>
+              </ul>
+            </li>
+            <li class="header-menu__item menu-dropdown">
+              <a class="menu-dropdown__active" href="#">Fruit and vegetables</a>
+              <ul class="menu-dropdown__list">
+                <li class="menu-dropdown__item">
+                  <a class="menu-dropdown__link" href="#">one</a>
+                </li>
+                <li class="menu-dropdown__item">
+                  <a class="menu-dropdown__link" href="#">two</a>
+                </li>
+                <li class="menu-dropdown__item">
+                  <a class="menu-dropdown__link" href="#">three</a>
+                </li>
+              </ul>
+            </li>
+            <li class="header-menu__item menu-dropdown">
+              <a class="menu-dropdown__active" href="#">Meat and fish</a>
+              <ul class="menu-dropdown__list">
+                <li class="menu-dropdown__item">
+                  <a class="menu-dropdown__link" href="#">one</a>
+                </li>
+                <li class="menu-dropdown__item">
+                  <a class="menu-dropdown__link" href="#">two</a>
+                </li>
+                <li class="menu-dropdown__item">
+                  <a class="menu-dropdown__link" href="#">three</a>
+                </li>
+              </ul>
+            </li>
+            <li class="header-menu__item menu-dropdown">
+              <a class="menu-dropdown__active" href="#">Drinks</a>
+              <ul class="menu-dropdown__list">
+                <li class="menu-dropdown__item">
+                  <a class="menu-dropdown__link" href="#">one</a>
+                </li>
+                <li class="menu-dropdown__item">
+                  <a class="menu-dropdown__link" href="#">two</a>
+                </li>
+                <li class="menu-dropdown__item">
+                  <a class="menu-dropdown__link" href="#">three</a>
+                </li>
+              </ul>
+            </li>
+            <li class="header-menu__item menu-dropdown">
+              <a class="menu-dropdown__active" href="#">Kitchen</a>
+              <ul class="menu-dropdown__list">
+                <li class="menu-dropdown__item">
+                  <a class="menu-dropdown__link" href="#">one</a>
+                </li>
+                <li class="menu-dropdown__item">
+                  <a class="menu-dropdown__link" href="#">two</a>
+                </li>
+                <li class="menu-dropdown__item">
+                  <a class="menu-dropdown__link" href="#">three</a>
+                </li>
+              </ul>
+            </li>
+            <li class="header-menu__item menu-dropdown">
+              <a class="menu-dropdown__active" href="#">Special nutrition</a>
+              <ul class="menu-dropdown__list">
+                <li class="menu-dropdown__item">
+                  <a class="menu-dropdown__link" href="#">one</a>
+                </li>
+                <li class="menu-dropdown__item">
+                  <a class="menu-dropdown__link" href="#">two</a>
+                </li>
+                <li class="menu-dropdown__item">
+                  <a class="menu-dropdown__link" href="#">three</a>
+                </li>
+              </ul>
+            </li>
+            <li class="header-menu__item menu-dropdown">
+              <a class="menu-dropdown__active" href="#">Baby</a>
+              <ul class="menu-dropdown__list">
+                <li class="menu-dropdown__item">
+                  <a class="menu-dropdown__link" href="#">one</a>
+                </li>
+                <li class="menu-dropdown__item">
+                  <a class="menu-dropdown__link" href="#">two</a>
+                </li>
+                <li class="menu-dropdown__item">
+                  <a class="menu-dropdown__link" href="#">three</a>
+                </li>
+              </ul>
+            </li>
+            <li class="header-menu__item menu-dropdown">
+              <a class="menu-dropdown__active" href="#">Pharmacy</a>
+              <ul class="menu-dropdown__list">
+                <li class="menu-dropdown__item">
+                  <a class="menu-dropdown__link" href="#">one</a>
+                </li>
+                <li class="menu-dropdown__item">
+                  <a class="menu-dropdown__link" href="#">two</a>
+                </li>
+                <li class="menu-dropdown__item">
+                  <a class="menu-dropdown__link" href="#">three</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </header>
+
+    <main class="site-main pb-5">
+      <h1 class="sr-only">Catigory</h1>
+      <section class="py-3 overflow-auto">
+        <ul class="list-unstyled d-flex align-items-center mb-0">
+          <li class="mr-2 flex-nowrap">
+            <a class="text-decoration-none text-secondary flex-nowrap" href="index.html">Homepage</a>
+          </li>
+          /
+          <li class="mr-2 ml-2 flex-nowrap">
+            <a class="text-decoration-none text-secondary flex-nowrap" href="category.html">Fruit and vegetables</a>
+          </li>
+          /
+          <li class="ml-2 flex-nowrap">
+            <a class="text-decoration-none text-dark flex-nowrap" href="products.html">Carrots from Tomissy Farm</a>
+          </li>
+        </ul>
+      </section>
+
+      <section class="pt-2 row no-gutters">
+        <div class="d-flex flex-column w-100 col-md-5">
+          <div class="position-relative mb-3 rounded-lg d-block">
+            <img class="rounded-lg w-100" src="https://via.placeholder.com/569x436?text=PRODUCT" alt="img large"
+            width="569" height="436">
+            <span class="products-card__top-sale">-36%</span>
+            <span class="products-card__top-sale ml-5">Free shipping</span>
+          </div>
+          <div class="mb-3 rounded-lg d-none d-md-block">
+            <img class="rounded-lg w-100" src="https://via.placeholder.com/569x436?text=PRODUCT" alt="img large"
+            width="569" height="436">
+          </div>
+          <div class="rounded-lg d-none d-md-block">
+            <img class="rounded-lg w-100" src="https://via.placeholder.com/569x436?text=PRODUCT" alt="img large"
+            width="569" height="436">
+          </div>
+        </div>
+        <div class="col-md-7 pl-md-5">
+
+          <h3 class="h2">Carrots from Tomissy Farm</h3>
+
+          <div class="d-flex align-items-center mb-4">
+            <img class="d-block mr-2" src="img/stars-for.png" alt="stars" width="100" height="20">
+            <span class="text-secondary">(1 customer review)</span>
+          </div>
+
+          <p class="mb-4">Carrots from Tomissy Farm are one of the best on the market. Tomisso and his family are giving a full love to his Bio products. Tomisso’s carrots are growing on the fields naturally.</p>
+
+          <div class="row w-100 mb-4">
+            <ul class="d-flex justify-content-between list-unstyled mb-0 col-sm-6 mb-5 mb-sm-0 col-md-12 mb-md-5 mb-lg-0 col-lg-6">
+              <li class="d-flex flex-column">
+                <span class="text-secondary mb-2">SKU:</span>
+                <span class="text-secondary mb-2">Category:</span>
+                <span class="text-secondary mb-2">Stock:</span>
+                <span class="text-secondary">Farm</span>
+              </li>
+              <li class="d-flex flex-column">
+                <span class="mb-2">76645</span>
+                <span class="mb-2">Vegetables</span>
+                <span class="mb-2">In Stock</span>
+                <span class="">Grocery Tarm Fields</span>
+              </li>
+            </ul>
+            <ul class="d-flex justify-content-between list-unstyled mb-0 col-sm-6
+            col-md-12 col-lg-6">
+              <li class="d-flex flex-column">
+                <span class="text-secondary mb-2">Freshness:</span>
+                <span class="text-secondary mb-2">Buy by:</span>
+                <span class="text-secondary mb-2">Delivery:</span>
+                <span class="text-secondary">Delivery area</span>
+              </li>
+              <li class="d-flex flex-column">
+                <span class="mb-2">1 days old</span>
+                <span class="mb-2">pcs, kgs, box, pack</span>
+                <span class="mb-2">in 2 days</span>
+                <span class="">Czech republic</span>
+              </li>
+            </ul>
+          </div>
+
+          <div class="bg-white shadow-sm py-4 px-3 col-md-11 d-sm-flex align-items-sm-center flex-md-column align-items-md-start flex-lg-row align-items-lg-center">
+            <div class="d-flex flex-column h4 text-success mb-3 mb-sm-0 mr-sm-auto mb-md-3 mb-lg-0">
+              36.23 USD 
+              <span class="h6 text-secondary mb-0">48.56 USD</span>
+            </div>
+            <div class="d-flex">
+              <button class="btn btn-sm rounded-lg bg-light py-2 px-4 d-inline-flex" type="button">
+                <span class="pr-3 border-right text-secondary">1</span>
+                <span class="d-flex align-items-center pl-3">
+                  Pcs
+                  <svg class="ml-2" width="8" height="4" viewBox="0 0 8 4" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1.61035 0.899918L3.66535 2.95492C3.75903 3.04804 3.88576 3.10031 4.01785 3.10031C4.14994 3.10031 4.27667 3.04804 4.37035 2.95492L6.37035 0.954917" stroke="#151515" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="bevel"/></svg>
+                </span>
+              </button>
+              <button class="btn btn-sm bg-success py-2 px-3 rounded-lg text-white d-flex align-items-center ml-md-4 ml-4" type="button">
+                <svg class="mr-2" width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12.1608 7H1.49414" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="bevel"/><path d="M6.82812 12.3334V1.66676" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="bevel"/></svg>
+                Add to cart
+              </button>
+            </div>
+            <div class="d-flex align-items-center">
+
+            </div>
+          </div>
+
+          <div class="d-flex flex-column flex-sm-row align-items-sm-center py-4">
+            <button class="d-flex align-items-center btn pl-0" type="button">
+              <svg class="mr-2" width="17" height="16" viewBox="0 0 17 16" fill="red" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#clip0)"><path fill-rule="evenodd" clip-rule="evenodd" d="M9.13062 3.26001C9.76714 2.62349 10.6304 2.2659 11.5306 2.2659C12.4308 2.2659 13.2941 2.62349 13.9306 3.26001C14.5671 3.89653 14.9247 4.75984 14.9247 5.66001C14.9247 6.56019 14.5671 7.42349 13.9306 8.06001L13.0573 8.93334L8.25729 13.7333L3.45729 8.93334L2.58396 8.06001C1.94744 7.42349 1.58984 6.56019 1.58984 5.66001C1.58984 4.75984 1.94744 3.89653 2.58396 3.26001C3.22048 2.62349 4.08378 2.2659 4.98396 2.2659C5.88413 2.2659 6.74744 2.62349 7.38396 3.26001L8.25729 4.13334L9.13062 3.26001Z" stroke="#red" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></g><defs><clipPath id="clip0"><rect width="16" height="16" fill="red" transform="translate(0.256836)"/></clipPath></defs></svg>
+              Add to my wish list
+            </button>
+            <button class="d-flex align-items-center btn pl-0" type="button">
+              <img class="d-block mr-2" src="img/shopping-icon.svg" alt="shopping icon" width="16" height="16"> 
+              Compare
+            </button>
+          </div>
+
+          <ul class="nav nav-tabs row no-gutters mb-5" id="myTab" role="tablist">
+            <li class="col-4 nav-item" role="presentation">
+              <a class="nav-link text-center active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Description</a>
+            </li>
+            <li class="col-4 nav-item" role="presentation">
+              <a class="nav-link text-center" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Reviews</a>
+            </li>
+            <li class="col-4 nav-item" role="presentation">
+              <a class="nav-link text-center" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">Questions</a>
+            </li>
+          </ul>
+          <div class="tab-content" id="myTabContent">
+            <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+
+              <h4 class="h5 mb-3">Origns</h4>
+              <p class="mb-5">We work hard to ensure that the fruit and vegetables we sell are fresh and high in quality. If we don’t grow them ourselves, we source them from carefully chosen suppliers, preferring to buy locally whenever possible.
+              </p>
+
+              <h4 class="h5 mb-3">How to cook</h4>
+              <p class="mb-5">From roasts, salads and soups to casseroles and cakes, Carrots will lend sweetness, texture and colour to an enormous number of recipes.</p>
+
+              <h4 class="h5 mb-3">Full of Vitamins!</h4>
+              <table class="table">
+                <thead class="thead-light">
+                  <tr>
+                    <th scope="col">Vitamins</th>
+                    <th scope="col">Quantity</th>
+                    <th scope="col">% DV</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Vitamin A equiv.</td>
+                    <td>735 μg</td>
+                    <td>104 %</td>
+                  </tr>
+                  <tr>
+                    <td>Thiamine (B1)</td>
+                    <td>0.066 mg</td>
+                    <td>6 %</td>
+                  </tr>
+                  <tr>
+                    <td>Niacin (B3)</td>
+                    <td>0.983 mg</td>
+                    <td>7%</td>
+                  </tr>
+                  <tr>
+                    <td>Folate (Bg)</td>
+                    <td>19 μg</td>
+                    <td>5 %</td>
+                  </tr>
+                  <tr>
+                    <td>Vitamin C</td>
+                    <td>5.9 mg</td>
+                    <td>7 %</td>
+                  </tr>
+                  <tr>
+                    <td>Vitamin E</td>
+                    <td>0.66 mg</td>
+                    <td>4 %</td>
+                  </tr>
+                  <tr>
+                    <td>Vitamin K</td>
+                    <td>13.2</td>
+                    <td>13 %</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Et quasi doloremque asperiores officiis reiciendis, provident similique magnam amet. Quis perferendis quasi, possimus non eaque autem at iste, vitae voluptas nam reprehenderit neque necessitatibus, velit quisquam itaque exercitationem aperiam. Saepe iusto est quae laboriosam nam cum at, fugiat labore consequuntur veniam!</div>
+            <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem iusto at officia, placeat magni enim exercitationem unde saepe facilis natus temporibus maxime aliquam? Nisi aliquam beatae sed vero numquam explicabo excepturi. Soluta, aut architecto. Quam pariatur assumenda nesciunt obcaecati modi autem ratione, molestiae ea atque vel magni corporis veniam aspernatur libero repellat dolor. Nobis aliquam sapiente perspiciatis ipsa nihil voluptatibus, labore pariatur reiciendis doloremque culpa quidem adipisci maiores! Recusandae, itaque.</div>
+          </div>
+
+        </div>
+      </section>
+
+      <section class="bg-white pt-5">
+        <div class="d-flex justify-content-between align-items-center mb-4">
+          <h2 class="h6 mb-0">Related products</h2>
+          <button class="d-flex align-items-center btn btn-sm" type="button">
+            More products
+            <svg class="ml-3" width="6" height="9" viewBox="0 0 6 9" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1.5332 7.68663L4.2732 4.94663C4.39737 4.82172 4.46706 4.65276 4.46706 4.47663C4.46706 4.30051 4.39737 4.13154 4.2732 4.00663L1.60654 1.33997" stroke="#151515" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="bevel"/></svg>
+          </button>
+        </div>
+
+        <div class="row">
+          <div class="col-sm-6 mb-4 col-md-4 col-lg-3 mb-lg-0">
+            <div class="rounded-lg shadow-sm p-3">
+              <div class="position-relative mb-3">
+                <img class="w-100 rounded-lg" src="https://via.placeholder.com/236x180?text=PRODUCT" alt="products"
+                width="236" height="180">
+                <span class="products-card__top-sale"></span>
+              </div>
+              <h3 class="h6 mb-1 font-weight-bolder">Product Title</h3>
+              <p class="mb-4">Space for a small product description</p>
+              <div class="d-flex align-items-center justify-content-between">
+                <p class="font-weight-bold mb-0">3.26 USD <span class="products-card__sale-money"></span></p>
+                <a class="text-decoration-none text-white btn border-primary shadow-none rounded-lg bg-success" href="#">Buy now</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 mb-4 col-md-4 col-lg-3 mb-lg-0">
+            <div class="rounded-lg shadow-sm p-3">
+              <div class="position-relative mb-3">
+                <img class="w-100 rounded-lg" src="https://via.placeholder.com/236x180?text=PRODUCT" alt="products"
+                width="236" height="180">
+                <span class="products-card__top-sale"></span>
+              </div>
+              <h3 class="h6 mb-1 font-weight-bolder">Product Title</h3>
+              <p class="mb-4">Space for a small product description</p>
+              <div class="d-flex align-items-center justify-content-between">
+                <p class="font-weight-bold mb-0">3.26 USD <span class="products-card__sale-money"></span></p>
+                <a class="text-decoration-none text-white btn border-primary shadow-none rounded-lg bg-success" href="#">Buy now</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 mb-4 col-md-4 col-lg-3 mb-lg-0">
+            <div class="rounded-lg shadow-sm p-3">
+              <div class="position-relative mb-3">
+                <img class="w-100 rounded-lg" src="https://via.placeholder.com/236x180?text=PRODUCT" alt="products"
+                width="236" height="180">
+                <span class="products-card__top-sale"></span>
+              </div>
+              <h3 class="h6 mb-1 font-weight-bolder">Product Title</h3>
+              <p class="mb-4">Space for a small product description</p>
+              <div class="d-flex align-items-center justify-content-between">
+                <p class="font-weight-bold mb-0">3.26 USD <span class="products-card__sale-money"></span></p>
+                <a class="text-decoration-none text-white btn border-primary shadow-none rounded-lg bg-success" href="#">Buy now</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-4 col-lg-3">
+            <div class="rounded-lg shadow-sm p-3">
+              <div class="position-relative mb-3">
+                <img class="w-100 rounded-lg" src="https://via.placeholder.com/236x180?text=PRODUCT" alt="products"
+                width="236" height="180">
+                <span class="products-card__top-sale"></span>
+              </div>
+              <h3 class="h6 mb-1 font-weight-bolder">Product Title</h3>
+              <p class="mb-4">Space for a small product description</p>
+              <div class="d-flex align-items-center justify-content-between">
+                <p class="font-weight-bold mb-0">3.26 USD <span class="products-card__sale-money"></span></p>
+                <a class="text-decoration-none text-white btn border-primary shadow-none rounded-lg bg-success" href="#">Buy now</a>
+              </div>
+            </div>
+          </div>
+          
+          
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <h1 class="visually-hidden">Footer</h1>
+      <section class="footer-top">
+        <h2 class="visually-hidden">footer</h2>
+
+        <div class="footer-top__list-box">
+          <h3 class="footer-top__title">Get in touch</h3>
+          <ul class="footer-top__list">
+            <li class="footer-top__item">
+              <a href="#" class="footer-top__link footer-top__touch-link">About Us</a>
+            </li>
+            <li class="footer-top__item">
+              <a href="#" class="footer-top__link">Careers</a>
+            </li>
+            <li class="footer-top__item">
+              <a href="#" class="footer-top__link">Press Releases</a>
+            </li>
+            <li class="footer-top__item">
+              <a href="#" class="footer-top__link">Blog</a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer-top__list-box">
+          <h3 class="footer-top__title">Connections</h3>
+          <ul class="footer-top__list">
+            <li class="footer-top__item">
+              <a href="#" class="footer-top__link">Facebook</a>
+            </li>
+            <li class="footer-top__item">
+              <a href="#" class="footer-top__link">Twitter</a>
+            </li>
+            <li class="footer-top__item">
+              <a href="#" class="footer-top__link">Instagram</a>
+            </li>
+            <li class="footer-top__item">
+              <a href="#" class="footer-top__link">Youtube</a>
+            </li>
+            <li class="footer-top__item">
+              <a href="#" class="footer-top__link">LinkedIn</a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer-top__list-box">
+          <h3 class="footer-top__title">Earnings</h3>
+          <ul class="footer-top__list ">
+            <li class="footer-top__item">
+              <a href="#" class="footer-top__link">Become an Affiliate</a>
+            </li>
+            <li class="footer-top__item">
+              <a href="#" class="footer-top__link">Advertise your product</a>
+            </li>
+            <li class="footer-top__item">
+              <a href="#" class="footer-top__link">Sell on Market</a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer-top__list-box">
+          <h3 class="footer-top__title">Account</h3>
+          <ul class="footer-top__list">
+            <li class="footer-top__item">
+              <a href="#" class="footer-top__link">Your account</a>
+            </li>
+            <li class="footer-top__item">
+              <a href="#" class="footer-top__link">Returns Centre</a>
+            </li>
+            <li class="footer-top__item">
+              <a href="#" class="footer-top__link">100 % purchase protection</a>
+            </li>
+            <li class="footer-top__item">
+              <a href="#" class="footer-top__link">Chat with us</a>
+            </li>
+            <li class="footer-top__item">
+              <a href="#" class="footer-top__link">Help</a>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+
+      <div class="site-footer__tags footer-bottom">
+        <h3 class="footer-bottom__title">
+          Product tags
+        </h3>
+        <ul class="footer-bottom__list">
+          <li class="footer-bottom__item">
+            <a class="footer-bottom__link" href="#">
+              Beans
+            </a>
+          </li>
+
+          <li class="footer-bottom__item">
+            <a class="footer-bottom__link" href="#">
+              Carrots
+            </a>
+          </li>
+
+          <li class="footer-bottom__item">
+            <a class="footer-bottom__link" href="#">
+              Apples
+            </a>
+          </li>
+
+          <li class="footer-bottom__item">
+            <a class="footer-bottom__link" href="#">
+              Garlic
+            </a>
+          </li>
+
+          <li class="footer-bottom__item">
+            <a class="footer-bottom__link" href="#">
+              Mushrooms
+            </a>
+          </li>
+
+          <li class="footer-bottom__item">
+            <a class="footer-bottom__link" href="#">
+              Tomatoes
+            </a>
+          </li>
+
+          <li class="footer-bottom__item">
+            <a class="footer-bottom__link" href="#">
+              Chilli peppers
+            </a>
+          </li>
+
+          <li class="footer-bottom__item">
+            <a class="footer-bottom__link" href="#">
+              Broccoli
+            </a>
+          </li>
+
+          <li class="footer-bottom__item">
+            <a class="footer-bottom__link" href="#">
+              Watermelons
+            </a>
+          </li>
+
+          <li class="footer-bottom__item">
+            <a class="footer-bottom__link" href="#">
+              Oranges
+            </a>
+          </li>
+
+          <li class="footer-bottom__item">
+            <a class="footer-bottom__link" href="#">
+              Grapes
+            </a>
+          </li>
+
+          <li class="footer-bottom__item">
+            <a class="footer-bottom__link" href="#">
+              Cherries
+            </a>
+          </li>
+
+          <li class="footer-bottom__item">
+            <a class="footer-bottom__link" href="#">
+              Meat
+            </a>
+          </li>
+
+          <li class="footer-bottom__item">
+            <a class="footer-bottom__link" href="#">
+              Seo tag
+            </a>
+          </li>
+
+          <li class="footer-bottom__item">
+            <a class="footer-bottom__link" href="#">
+              Fish
+            </a>
+          </li>
+
+          <li class="footer-bottom__item">
+            <a class="footer-bottom__link" href="#">
+              Seo tag
+            </a>
+          </li>
+
+          <li class="footer-bottom__item">
+            <a class="footer-bottom__link" href="#">
+              Fresh food
+            </a>
+          </li>
+
+          <li class="footer-bottom__item">
+            <a class="footer-bottom__link" href="#">
+              Lemons
+            </a>
+          </li>
+        </ul>
+      </div>
+      <span class="site-footer__copyright">
+        Copyright © 2020 petrbilek.com
+      </span>
+    </footer>
+  </div>
+
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/jquery-3.6.0.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>
